@@ -5,17 +5,17 @@
 ### 2021
 
 
-## Índice
-00 Temática del sitio.
-01 Descripción del sitio.
-02 Público objetivo.
-03 Páginas referentes.
-04 Descripción de autores.
-05 Link del tablero de trabajo.
-06 Bibliografía.
+## 00 Índice
+* 01 Temática del sitio
+* 02 Descripción del sitio
+* 03 Público objetivo
+* 04 Páginas referentes
+* 05 Descripción de autores
+* 06 Link del tablero de trabajo
+* 07 Bibliografía
 
 
-## 00 Temática del sitio
+## 01 Temática del sitio
 El sitio web es un e-commerce de NFT. 
 NFT son las siglas  en inglés para tokens no fungibles.
 Los NFTs pueden ser bienes digitales o bienes físicos.
@@ -25,7 +25,7 @@ Los NFTs son comercializados a través de ¿ventas directas? y subastas.
 Los NFTs son comercializados a través de criptomonedas.
 
 
-## 01 Descripción del sitio
+## 02 Descripción del sitio
 El sitio web se compone de cinco páginas.
 
 01 01 Home
@@ -43,11 +43,11 @@ Es la página dónde se registan los usuarios para tener una cuenta... continuar
 01 05 Formulario de Login
 Es la página de ingreso de los usuarios al sitio web... contiunar
 
-## 02 Público objetivo
+## 03 Público objetivo
 Completar. Artistas. Todo lo relacionado al mundo del arte. Arquitectos. Coleccionistas. Compradores de arte. Diseñadores.
 
 
-## 03 Páginas referentes
+## 04 Páginas referentes
 
 - https://www.bennett-tea.com/
 - http://species-in-pieces.com/
@@ -55,7 +55,7 @@ Completar. Artistas. Todo lo relacionado al mundo del arte. Arquitectos. Colecci
 - https://niftygateway.com/
 - https://www.aquest.it/ 
 
-## 04 Descripción de autores
+## 05 Descripción de autores
 Integrantes del grupo 01 del curso de Programación Web Full Stack de Digital House.
 Tres alumnos llamados Nicolas Boscoboinik, Milagros Hamwee y Diego Martín Laplaza.
 
@@ -66,11 +66,11 @@ Milagros Hamwee (20) es estudiante de arquitectura en la Facultad de Arquitectur
 Diego Martín Laplaza (24) es arquitecto por la Universidad Torcuato Di Tella. Actualmente se encuentra colaborando en los Archivos de Arquitectura de la UTDT. Interesado en la 
 
 
-## 05 Link del tablero de trabajo
+## 06 Link del tablero de trabajo
 El grupo 01 trabaja en el siguiente link:
 https://trello.com/paginaarquitectura
 
 
-## 06 Bibliografía
+## 07 Bibliografía
 NFT
 https://www.bbc.com/mundo/noticias-56502251
