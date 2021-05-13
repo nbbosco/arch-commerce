@@ -1,7 +1,11 @@
 Digital House
+***
 Programación Web Full Stack
+***
 Proyecto Integrador
+***
 Sprint 01
+***
 2021
 
 
@@ -56,8 +60,8 @@ https://niftygateway.com/
 Completar
 
 # 04 Descripción de autores
-Somos integrantes del grupo 01 del curso de Programación Web Full Stack de Digital House.
-Somos tres alumnos del curso: Nicolas Boscoboinik, Milagros Hamwee y Diego Martín Laplaza
+Integrantes del grupo 01 del curso de Programación Web Full Stack de Digital House.
+Tres alumnos llamados Nicolas Boscoboinik, Milagros Hamwee y Diego Martín Laplaza.
 
 Nicolas Boscoboinik (24) es estudiante de arquitectura en la Escuela de Arquitectura y Estudios Urbanos de la Universidad Torcuato Di Tella. Actualmente se encuentra desarrollando su tesis proyectual. Apasionado por todo lo relacionado a crear y construir proyectos. Interesado en aplicar nuevos conocimientos de programación en el área de la construcción.
 
