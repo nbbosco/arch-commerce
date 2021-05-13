@@ -53,11 +53,11 @@ Completar. Artistas. Todo lo relacionado al mundo del arte. Arquitectos. Colecci
 
 # 03 Páginas referentes
 
-https://www.bennett-tea.com/
-http://species-in-pieces.com/
-https://makersplace.com/
-https://niftygateway.com/
-Completar
+- https://www.bennett-tea.com/
+- http://species-in-pieces.com/
+- https://makersplace.com/
+- https://niftygateway.com/
+- https://www.aquest.it/ 
 
 # 04 Descripción de autores
 Integrantes del grupo 01 del curso de Programación Web Full Stack de Digital House.
