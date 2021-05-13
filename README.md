@@ -10,13 +10,13 @@ Sprint 01
 
 
 # Índice
-00 Temática del sitio
-01 Descripción del sitio
-02 Público objetivo
-03 Páginas referentes
-04 Descripción de autores
-05 Link del tablero de trabajo
-06 Bibliografía
+00 Temática del sitio.
+01 Descripción del sitio.
+02 Público objetivo.
+03 Páginas referentes.
+04 Descripción de autores.
+05 Link del tablero de trabajo.
+06 Bibliografía.
 
 
 # 00 Temática del sitio
