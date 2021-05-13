@@ -28,19 +28,19 @@ Los NFTs son comercializados a través de criptomonedas.
 ## 02 Descripción del sitio
 El sitio web se compone de cinco páginas.
 
-01 01 Home
+02 01 Home
 Refiere a la página de inicio... continuar
 
-01 02 Detalle de Producto
+02 02 Detalle de Producto
 Refiere a la pagina dónde se describe las propiedades del producto... continuar
 
-01 03 Carrito de Compras
+02 03 Carrito de Compras
 Refiere a la página dónde se acumulan las selecciones de productos a comprar... continuar
 
-01 04 Formulario de Registro
+02 04 Formulario de Registro
 Es la página dónde se registan los usuarios para tener una cuenta... continuar
 
-01 05 Formulario de Login
+02 05 Formulario de Login
 Es la página de ingreso de los usuarios al sitio web... contiunar
 
 ## 03 Público objetivo
@@ -49,10 +49,10 @@ Completar. Artistas. Todo lo relacionado al mundo del arte. Arquitectos. Colecci
 
 ## 04 Páginas referentes
 
-- https://www.bennett-tea.com/
 - http://species-in-pieces.com/
-- https://makersplace.com/
+- https://www.bennett-tea.com/
 - https://niftygateway.com/
+- https://makersplace.com/ 
 - https://www.aquest.it/ 
 
 ## 05 Descripción de autores
@@ -61,16 +61,16 @@ Tres alumnos llamados Nicolas Boscoboinik, Milagros Hamwee y Diego Martín Lapla
 
 Nicolas Boscoboinik (24) es estudiante de arquitectura en la Escuela de Arquitectura y Estudios Urbanos de la Universidad Torcuato Di Tella. Actualmente se encuentra desarrollando su tesis proyectual. Apasionado por todo lo relacionado a crear y construir proyectos. Interesado en aplicar nuevos conocimientos de programación en el área de la construcción.
 
-Milagros Hamwee (20) es estudiante de arquitectura en la Facultad de Arquitectura y Diseño Urbano de la Universidad de Buenos Aires. Actualmente se encuentra en el segundo año de la carrera. Intrigadada por el "detrás" de las cosas y cómo funcionan. Interesada principalmente en el diseño y aprender como aplicarlo en distintos rubros.
+Milagros Hamwee (20) es estudiante de arquitectura en la Facultad de Arquitectura y Diseño Urbano de la Universidad de Buenos Aires. Actualmente se encuentra en el segundo año de la carrera. Intrigada por el "detrás" de las cosas y cómo funcionan. Interesada principalmente en el diseño y aprender como aplicarlo en distintos rubros.
 
-Diego Martín Laplaza (24) es arquitecto por la Universidad Torcuato Di Tella. Actualmente se encuentra colaborando en los Archivos de Arquitectura de la UTDT. Interesado en la 
+Diego Martín Laplaza (24) es arquitecto por la Universidad Torcuato Di Tella. Actualmente se encuentra colaborando en los Archivos de Arquitectura de la UTDT. Interesado en la integración de ambas disciplinas (Arquitectura y Programación). Intrigado por las potencias latentes del mundo digital sobre la arquitectura y la ebullisión de éstas en el contexto latinoamericano.
 
 
 ## 06 Link del tablero de trabajo
-El grupo 01 trabaja en el siguiente link:
+Link de tablero de trabajo en Trello:
 https://trello.com/paginaarquitectura
 
 
 ## 07 Bibliografía
-NFT
+NFT:
 https://www.bbc.com/mundo/noticias-56502251
