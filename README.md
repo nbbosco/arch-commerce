@@ -30,6 +30,14 @@ Los NFTs de objetos tridimensionales son modelos artísticos, arquitectónicos, 
 ## 02 Descripción del sitio
 El sitio web se compone inicialmente de cinco páginas que organizan la información dividiendo progresivamente en columnas a medida que se atraviesa de arriba hacia abajo. El recorrido de las páginas diferencia el contenido en agrupamientos según agendas a definir por los autores de la página, y en catalogos de exposición de artistas o colecciones.
 
+Las cinco páginas iniciales son: 
+- Inicio
+- Detalle de producto
+- Carrito
+- Registro
+- Ingreso
+
+
 
 ## 03 Público objetivo
 La página web esta diseñada para un público de creadores y coleccionsitas de arte digital. Dentro de los creadores pueden encontrarse artistas, fotógrafos, músicos, arquitectos, y creadores de cualquier tipo de contenido digital que busquen un lugar confiable donde puedan vender objetos digitales únicos con garantía  de autentificación. Dentro de los coleccionista la lista se expande a cualquier persona con interés en el arte, sobre todo el arte digital, y que esté buscando una página que no solo le ofrezca una curaduría de objetos singulares de colección, sino una página de diseño en la cual exponer su colección. 
@@ -37,11 +45,12 @@ La página web esta diseñada para un público de creadores y coleccionsitas de 
 
 ## 04 Páginas referentes
 
-- http://species-in-pieces.com/
-- https://www.bennett-tea.com/
-- https://niftygateway.com/
-- https://makersplace.com/ 
-- https://www.aquest.it/ 
+1. https://makersplace.com/ 
+2. https://www.bennett-tea.com/ 
+3. https://www.aquest.it/ 
+4. https://niftygateway.com/
+5. http://species-in-pieces.com/
+
 
 ## 05 Descripción de autores
 Integrantes del grupo 01 del curso de Programación Web Full Stack de Digital House.
