@@ -16,13 +16,15 @@
 
 
 ## 01 Temática del sitio
-El sitio web es un e-commerce de NFT. 
-NFT son las siglas  en inglés para tokens no fungibles.
+El sitio web es un e-commerce de NFT de objetos tridimensionales. 
+NFT son las siglas en inglés para tokens no fungibles.
 Los NFTs pueden ser bienes digitales o bienes físicos.
-Los NFTs son activos digitales únicos que poseen un certificado de autentificación 
-Los NFTs son creados por autores que pueden elegir por crear copias del original.
-Los NFTs son comercializados a través de ¿ventas directas? y subastas.
+Los NFTs son activos digitales únicos que poseen un certificado de autentificación.
+Los NFTs son creados por autores que pueden optar por crear copias del original.
+Los NFTs son comercializados a través de subastas en linea.
 Los NFTs son comercializados a través de criptomonedas.
+Los NFTs de objetos tridimensionales son modelos artísticos, arquitectónicos, objetos de diseño, inmuebles, paisajes artificiales, y mundo digitales que ofrecen una experiencia digital inmersiva a quién la posee.
+
 
 
 ## 02 Descripción del sitio
@@ -44,7 +46,7 @@ Es la página dónde se registan los usuarios para tener una cuenta... continuar
 Es la página de ingreso de los usuarios al sitio web... contiunar
 
 ## 03 Público objetivo
-Completar. Artistas. Todo lo relacionado al mundo del arte. Arquitectos. Coleccionistas. Compradores de arte. Diseñadores.
+La página web esta diseñada para un público de creadores y coleccionsitas de arte digital. Dentro de los creadores pueden encontrarse artistas, fotógrafos, músicos, arquitectos, y creadores de cualquier tipo de contenido digital que busquen un lugar confiable donde puedan vender objetos digitales únicos con garantía  de autentificación. Dentro de los coleccionista la lista se expande a cualquier persona con interés en el arte, sobre todo el arte digital, y que esté buscando una página que no solo le ofrezca una curaduría de objetos singulares de colección, sino una página de diseño en la cual exponer su colección. 
 
 
 ## 04 Páginas referentes
@@ -74,3 +76,5 @@ https://trello.com/paginaarquitectura
 ## 07 Bibliografía
 NFT:
 https://www.bbc.com/mundo/noticias-56502251
+Creadores: (clickear en "learn more" para reproducir video)
+https://makersplace.com/register/creator/
