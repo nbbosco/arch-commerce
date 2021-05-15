@@ -45,11 +45,13 @@ La página web esta diseñada para un público de creadores y coleccionsitas de 
 
 ## 04 Páginas referentes
 
+Se relevaron cinco páginas que conforman un conjunto de casos ejemplares para el grupo en relación a algunas de las páginas a desarrollar:
+
 1. https://makersplace.com/ 
 2. https://www.bennett-tea.com/ 
 3. https://www.aquest.it/ 
 4. https://niftygateway.com/
-5. http://species-in-pieces.com/
+5. https://wetransfer.com/
 
 
 ## 05 Descripción de autores
