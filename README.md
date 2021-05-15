@@ -12,7 +12,7 @@
 * 04 Páginas referentes
 * 05 Descripción de autores
 * 06 Link del tablero de trabajo
-* 07 Bibliografía
+* 07 Referencias
 
 
 ## 01 Temática del sitio
@@ -28,22 +28,8 @@ Los NFTs de objetos tridimensionales son modelos artísticos, arquitectónicos, 
 
 
 ## 02 Descripción del sitio
-El sitio web se compone de cinco páginas.
+El sitio web se compone inicialmente de cinco páginas que organizan la información dividiendo progresivamente en columnas a medida que se atraviesa de arriba hacia abajo. El recorrido de las páginas diferencia el contenido en agrupamientos según agendas a definir por los autores de la página, y en catalogos de exposición de artistas o colecciones.
 
-02 01 Home
-Refiere a la página de inicio... continuar
-
-02 02 Detalle de Producto
-Refiere a la pagina dónde se describe las propiedades del producto... continuar
-
-02 03 Carrito de Compras
-Refiere a la página dónde se acumulan las selecciones de productos a comprar... continuar
-
-02 04 Formulario de Registro
-Es la página dónde se registan los usuarios para tener una cuenta... continuar
-
-02 05 Formulario de Login
-Es la página de ingreso de los usuarios al sitio web... contiunar
 
 ## 03 Público objetivo
 La página web esta diseñada para un público de creadores y coleccionsitas de arte digital. Dentro de los creadores pueden encontrarse artistas, fotógrafos, músicos, arquitectos, y creadores de cualquier tipo de contenido digital que busquen un lugar confiable donde puedan vender objetos digitales únicos con garantía  de autentificación. Dentro de los coleccionista la lista se expande a cualquier persona con interés en el arte, sobre todo el arte digital, y que esté buscando una página que no solo le ofrezca una curaduría de objetos singulares de colección, sino una página de diseño en la cual exponer su colección. 
@@ -73,7 +59,7 @@ Link de tablero de trabajo en Trello:
 https://trello.com/paginaarquitectura
 
 
-## 07 Bibliografía
+## 07 Referencias
 NFT:
 https://www.bbc.com/mundo/noticias-56502251
 Creadores: (clickear en "learn more" para reproducir video)
