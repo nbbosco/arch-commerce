@@ -1,22 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto;
+}
 header{
-    background-color: black;
-    color: white;
+    display: flex;
+    align-items: center;
+    background-color: #505050;
     text-align: center;
     height: 10vh;
+    margin: auto;
 }
-main{
+
+header a{
+    color: black;
+    text-decoration: solid;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    max-width: 400px;
+    max-height: 400px;
+    padding: 10px 0;
+    font-size: 24px;
+    margin: auto;
+}
+.logo{
+    color: white;
+    background-color: black;
+    font-weight: normal;
+    font-style: normal;
+}
+.header-home{
+    background-color: transparent;
+}
+
+.main-login{
     display: flex;
     flex-wrap: wrap; 
     align-items: center;
     height: 80vh;
 }
 
-.contenidoIzq{
+.contenidoIzq-login{
     width: 50%;
     height: 100%;
 }
 
-.contenidoDer{
+.contenidoDer-login{
     display: block;
     padding-left: 10%;
     text-align: center;
@@ -27,20 +63,32 @@ input{
     width: 100%;
     margin: 5px;
 }
-.ingresar{
+.ingresar-login{
     background-color: orangered;
     width: 80%;
     color: white;
     margin-bottom: 10px;
 
 }
-.botonesExtra{
+.botonesExtra-login{
     width: 40%;  
     height: 20px;
     text-align: justify;
 }
-.ayudas {
+.ayudas-login{
     text-align: right;
+}
+
+.botonExtra-producto {
+    width: 20%;  
+    height: 20px;
+    text-align: center;
+}
+.botonPrincipal-producto{
+    background-color: orangered;
+    width: 40%;
+    color: white;
+    margin-bottom: 10px;
 }
 footer{
     background-color: #505050;

@@ -19,8 +19,7 @@ app.get("/carrito", (_req, res) => {
 })
 
 app.get('/login', (_req, res) => {
-    let htmlPath = path.join(__dirname, './views/login.html')
-    res.sendFile(htmlPath);
+    res.sendFile(path.resolve(__dirname, './views/login.html'));
 })
 
 app.get("/producto", (_req, res) => {
