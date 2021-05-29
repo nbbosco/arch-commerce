@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/nbbosco/arch-commerce/issues"
   },
-  "homepage": "https://github.com/nbbosco/arch-commerce#readme"
+  "homepage": "https://github.com/nbbosco/arch-commerce#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
