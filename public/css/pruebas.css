@@ -16,8 +16,32 @@ header {
     width: 100%;
     font-family: 'Playfair Display', serif;
     color: white;
+    align-items: center;
+    height: 10vh;
+    margin: auto;
 }
-
+header a{
+    color: black;
+    text-decoration: solid;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    max-width: 400px;
+    max-height: 400px;
+    padding: 10px 0;
+    font-size: 24px;
+    margin: auto;
+}
+.logo{
+    color: white;
+    background-color: black;
+    font-weight: normal;
+    font-style: normal;
+}
 
 main{
     display: flex;
@@ -39,7 +63,7 @@ main h1 {
     color: #b8b451;
 
 }
-main p {
+main p{
     font-family: 'Playfair Display', serif;
     color: white;
     font-size: 12px;
