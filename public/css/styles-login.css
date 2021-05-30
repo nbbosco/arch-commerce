@@ -1,8 +1,6 @@
 body {
     background-color: #0d435c;
-    /* color: #617b81; color texto?*/
 }
-
 
 main{
     display: flex;
@@ -50,4 +48,7 @@ main input{
 }
 .ayudas {
     text-align: right;
+}
+.ayudas a {
+    color: white;
 }

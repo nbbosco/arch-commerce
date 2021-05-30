@@ -17,6 +17,10 @@ body {
     color: #b8b451;
 }
 
+.titulares1 a{
+    color: black;
+}
+
 .titulares2 {
     display: flex;
     flex-wrap: wrap; 

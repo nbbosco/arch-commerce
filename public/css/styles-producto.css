@@ -1,0 +1,21 @@
+
+.main-producto{
+    display: flexbox;
+}
+
+.portada-producto{
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+}
+.botonExtra-producto {
+    width: 20%;  
+    height: 20px;
+    text-align: center;
+}
+.botonPrincipal-producto{
+    background-color: orangered;
+    width: 40%;
+    color: white;
+    margin-bottom: 10px;
+}
