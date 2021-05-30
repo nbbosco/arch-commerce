@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #0d435c;
+    /* color: #617b81; color texto?*/
+}
+
+.titulares1 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #d6a549
+}
+
+.titulares2 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #d6a549
+}
+
+.tabla {
+    background-color:#052c3c;
+    border: 20px;
+    border-style: solid;
+    border-color: transparent
+}
