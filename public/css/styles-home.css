@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #0d435c;
+}
+
+.menu img { 
+    width: 100vw;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
