@@ -5,7 +5,6 @@
 
 body {
     background-color: #0d435c;
-    /* color: #617b81; color texto?*/
 }
 
 .titulares1 {
@@ -14,8 +13,8 @@ body {
     justify-content: space-between;
     align-items: center;
     font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    color: #d6a549
+    font-size: 20px;
+    color: #b8b451;
 }
 
 .titulares2 {
@@ -29,8 +28,17 @@ body {
 }
 
 .tabla {
+    width: 100vw;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     background-color:#052c3c;
-    border: 20px;
-    border-style: solid;
-    border-color: transparent
+    color: white;
+    font-size: 14px;
 }
+
+td{
+    width: 25vw;
+    text-align: center;
+}
+
