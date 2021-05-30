@@ -4,13 +4,14 @@ body {
 
 main{
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: nowrap; 
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     font-family: 'Playfair Display', serif;
     color: white;
     height: 700px;
+
 }
 .mainizquierda01{
     width: 50%;
