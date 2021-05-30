@@ -7,9 +7,12 @@ body {
 main{
     display: flex;
     flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     font-family: 'Playfair Display', serif;
     color: white;
+    height: 700px;
 }
 .mainizquierda01{
     width: 50%;
@@ -22,32 +25,34 @@ main{
 main h1 {
     font-family: 'Playfair Display', serif;
     color: #b8b451;
+    text-align: center;
 
 }
 main p{
     font-family: 'Playfair Display', serif;
     color: white;
     font-size: 12px;
+    text-align: center;
 
 }
 main input{
     width: 100%;
     margin: 5px;
     font-family: 'DM Sans', sans-serif;
+    padding: 5px;
 }
 .ingresar{
     background-color: #b8b451;
     width: 80%;
     color: white;
     margin-bottom: 10px;
-
+    padding: 5px;
 }
 .botonesExtra{
     background-color: #a6a597;
-    width: 40%;  
+    width: 50%;  
     height: 20px;
-    text-align: justify;
 }
 .ayudas {
-    text-align: right;
+    align-self: center;
 }
