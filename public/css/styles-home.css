@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #0d435c;
+    color: #b8b451;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu img{ 
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
