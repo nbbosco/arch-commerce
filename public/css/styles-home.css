@@ -3,13 +3,13 @@
 }
 body {
     background-color: #0d435c;
-    color: #b8b451;
+    /* color: #b8b451; */
     font-family: 'Playfair Display', serif;
 }
 header {
     background-image: url("/img/img-ParisAndChill4-FlorentBoston-SecPopulares.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100vw;
     font-family: 'Playfair Display', serif;
     color: white;
     height: 100vh;
@@ -64,7 +64,6 @@ header a{
 }
 header h4 {
     color: #b8b451;
-
 }
 header input,select {
     width: 90%;
@@ -72,25 +71,154 @@ header input,select {
     margin: auto;
     height: 20px;
 }
-/* .menu img{ 
-    width: 100vw;
-    height: 500px;
-    object-fit: cover;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-} */
-
-.sec-principal-arriba {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
+main h2 {
+    color: #b8b451;
+    border: #b8b451 2px solid;
+    width: 15%;
+    border-radius: 20px;
+    text-align: center;
     margin: auto;
-    margin-top: 40px;
-    width: 90vw;
+    margin-bottom: 40px;
 }
-.sec-principal-arriba img, video{
-    width: 90%;
+main h3 {
+    color: #b8b451;
+}
+main h5 {
+    color: white;
+}
+main p {
+    display: block;
+    background-color: #b8b451;
+    color: #ffffff;
+    width: 15%;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 90%;
+}
+.sec-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 60px 0 60px 0;
+}
+
+.sec-principal img {
+    width: 40vw;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 75%;
     border-radius: 10px;
+}
+
+.sec-principal video {
+    width: 40vw;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 75%;
+    border-radius: 10px;
+}
+
+.sec-secundaria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 60px
+}
+
+.sec-secundaria img {
+    width: 25vw;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sec-secundaria video {
+    width: 25vw;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sec-creadores-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 60px
+}
+
+.sec-creadores img {
+    width: 20vw;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.fa-user-circle {
+    margin-right: 5px;
+    font-size: 20px;
+}
+.sec-populares-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-bottom: 30px
+}
+
+.sec-populares img {
+   width: 15vw;
+   height: 150px;
+   object-fit: cover;
+   margin-bottom: 20px;
+   border-radius: 10px;
+}
+
+
+footer {
+    background-color: #052c3c;
+    box-sizing: content-box;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+}
+
+.footerizquierda01{
+    width: 12.5%;
+    text-align: left;
+    font-size: 10px;
+    padding-left: 1%;
+}
+.footerizquierda02{
+    width: 12.5%;;
+    text-align: center;
+    font-size: 10px;
+}
+.footerizquierda03{
+    width: 12.5%;;
+    text-align: right;
+    font-size: 10px;
+}
+.footercentro{
+    width: 25%;
+    text-align: center;
+    font-size: 12px;
+}
+.footerderecha01 {
+    width: 12.5%;;
+    text-align: left;
+    font-size: 10px;
+}
+.footerderecha02 {
+    width: 12.5%;;
+    text-align: center;
+    font-size: 10px;
+}
+.footerderecha03 {
+    width: 12.5%;;
+    text-align: right;
+    font-size: 10px;
+    padding-right: 1%;
 }
