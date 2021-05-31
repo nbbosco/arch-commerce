@@ -35,22 +35,29 @@ main p{
 
 }
 main input{
-    width: 100%;
+    width: 500px;
     margin: 5px;
     font-family: 'DM Sans', sans-serif;
     padding: 5px;
 }
 .ingresar{
     background-color: #b8b451;
+    font-family: 'Playfair Display', serif;
+    align-items: center;
     width: 80%;
     color: white;
     margin-bottom: 10px;
     padding: 5px;
+    display: flex;
+    margin: auto;
 }
 .botonesExtra{
     background-color: #a6a597;
     width: 50%;  
-    height: 20px;
+    height: 25px;
+    display: flex;
+    text-align: center;
+    margin: auto;
 }
 .ayudas {
     align-self: center;
