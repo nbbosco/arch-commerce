@@ -9,7 +9,7 @@ body {
 header {
     background-image: url("/img/img-ParisAndChill4-FlorentBoston-SecPopulares.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100vw;
     font-family: 'Playfair Display', serif;
     color: white;
     height: 100vh;
@@ -72,13 +72,117 @@ header input,select {
     margin: auto;
     height: 20px;
 }
-.menu img{ 
-    width: 100vw;
-    height: 500px;
-    object-fit: cover;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
+
+.sec-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
 }
 
+.sec-principal img {
+    width: 40vw;
+    height: 300px;
+    object-fit: cover;
+}
+
+.sec-principal video {
+    width: 40vw;
+    height: 300px;
+    object-fit: cover;
+}
+
+.sec-secundaria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sec-secundaria img {
+    width: 25vw;
+    height: 300px;
+    object-fit: cover;
+}
+
+.sec-secundaria video {
+    width: 25vw;
+    height: 300px;
+    object-fit: cover;
+}
+
+.sec-creadores-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sec-creadores img {
+    width: 20vw;
+    height: 200px;
+    object-fit: cover;
+}
+
+.sec-populares-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sec-populares img {
+   width: 15vw;
+   height: 150px;
+   object-fit: cover;
+   margin-bottom: 20px;
+}
+
+
+
+footer {
+    background-color: #052c3c;
+    box-sizing: content-box;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+}
+
+.footerizquierda01{
+    width: 12.5%;
+    text-align: left;
+    font-size: 10px;
+    padding-left: 1%;
+}
+.footerizquierda02{
+    width: 12.5%;;
+    text-align: center;
+    font-size: 10px;
+}
+.footerizquierda03{
+    width: 12.5%;;
+    text-align: right;
+    font-size: 10px;
+}
+.footercentro{
+    width: 25%;
+    text-align: center;
+    font-size: 12px;
+}
+.footerderecha01 {
+    width: 12.5%;;
+    text-align: left;
+    font-size: 10px;
+}
+.footerderecha02 {
+    width: 12.5%;;
+    text-align: center;
+    font-size: 10px;
+}
+.footerderecha03 {
+    width: 12.5%;;
+    text-align: right;
+    font-size: 10px;
+    padding-right: 1%;
+}
