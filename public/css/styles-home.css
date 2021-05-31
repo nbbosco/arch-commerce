@@ -72,7 +72,7 @@ header input,select {
     margin: auto;
     height: 20px;
 }
-.menu img{ 
+/* .menu img{ 
     width: 100vw;
     height: 500px;
     object-fit: cover;
@@ -80,5 +80,17 @@ header input,select {
     left: 0px;
     top: 0px;
     z-index: -1;
-}
+} */
 
+.sec-principal-arriba {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: auto;
+    margin-top: 40px;
+    width: 90vw;
+}
+.sec-principal-arriba img, video{
+    width: 90%;
+    border-radius: 10px;
+}
