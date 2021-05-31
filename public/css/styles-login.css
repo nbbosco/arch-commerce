@@ -1,3 +1,4 @@
+
 body {
     background-color: #0d435c;
 }
@@ -40,6 +41,7 @@ main input{
     font-family: 'DM Sans', sans-serif;
     padding: 5px;
 }
+
 .ingresar{
     background-color: #b8b451;
     font-family: 'Playfair Display', serif;
@@ -48,6 +50,7 @@ main input{
     color: white;
     margin-bottom: 10px;
     padding: 5px;
+    padding-left: 35%;
     display: flex;
     margin: auto;
 }
