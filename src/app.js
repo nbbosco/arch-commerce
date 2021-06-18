@@ -16,11 +16,4 @@ app.listen(3000, () => {
     console.log("Servidor corriendo en el puerto 3000");
 });
 
-app.use('/', mainRoutes); 
-app.use('/', productsRoutes); 
-app.use('/', usersRoutes); 
-
-
-// app.get("/", (_req, res) => {
-//     res.sendFile(path.resolve(__dirname,"./views/"));
-// })
+app.use('/', mainRoutes, productsRoutes, usersRoutes);
