@@ -14,15 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="menu">
-            <a href="registro"><i class="fas fa-heart"></i></a>
-            <a href="producto"><i class="fas fa-fire"></i></a>
-            <a href="/"><i class="logo">Logo</i></a>
-            <a href="login"><i class="fas fa-user"></i></a>
-            <a href="carrito"><i class="fas fa-cart-plus"></i></a>
-        </div>
-    </header>
+
+    <!-- header -->
+    <%- include('./partials/header') %>
 
     <main>
         <img class="mainizquierda01"src="img/img-AMoment-MattEmmett-SecPrincipal-MasDelVendedor.jpg" alt="login">
@@ -47,49 +41,8 @@
      </div>
     </main>
 
-    <footer>
-        <p class="footerizquierda01">
-            Twitter
-            <br>
-            Facebook
-            <br>
-            Instagram
-        </p>
-        <p class="footerizquierda02">
-            Perfil
-            <br>
-            Billetera
-            <br>
-            Colección
-        </p>
-        <p class="footerizquierda03">
-            Coleccionistas
-            <br>
-            Creadores
-        </p>
-        <p class="footercentro"><i class="fas fa-certificate"></i>
-            <br>
-            <br>
-            <br>
-            All Rigths Reserved
-        </p>
-        <p class="footerderecha01">
-            About
-            <br>
-            Contacto
-        </p>
-        <p class="footerderecha02">
-            Ingresar
-            <br>
-            Registrarse
-            <br>
-            Coleccionistas
-        </p>
-        <p class="footerderecha03">
-            Idioma
-            <br>
-            <br>
-        </p>
-    </footer>
+    <!-- footer -->
+    <%- include('./partials/footer') %>
+ 
 </body>
 </html>
