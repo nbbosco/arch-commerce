@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de Edición de producto</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/header-footer.css">
+    <link rel="stylesheet" href="/css/styles-producto.css">
+
+</head>
+<body>
+    <!-- header -->
+    <%- include('../partials/header') %>
+
+    <main>
+        <div class="portada">
+            <form action="/producto" method="POST">
+                <input type="file" name="portada" accept=".jpg">
+                <br>
+                <input type="file" name="detalle de producto" accept=".jpg">
+                <br>
+                <input type="text" name="nombre del producto" placeholder="Nombre del producto">
+                <br>
+                <input type="text" name="nombre del creador" placeholder="Nombre del creador">
+                <br>
+                <input type="text" name="nombre del vendedor" placeholder="Nombre del vendedor">
+                <br>
+                <textarea name="descripcion del producto" placeholder="Describe el producto"></textarea>
+                <br>
+                <button type="submit" class="botonExtra">Cargar</button>
+                <br>
+                <button type="submit"class="botonExtra">Editar</button>
+            </form>
+        </div>
+     </main>
+
+    <!-- footer -->
+    <%- include('../partials/footer') %>
+    
+</body>
+</html>
