@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vista de Detalle de producto</title>
+    <title>Vista de Edición de producto</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
@@ -23,54 +23,29 @@
             <form action="/producto" method="POST">
                 <input type="file" name="portada" accept=".jpg">
         </form>
-            <img src="/img/img-TheFisherman-RiccardoFornoni-SecCreadores-Producto.jpg">
         </div>
         <div class="descripcion">
             <div>
                 <form action="/producto" method="POST">
                     <input type="file" name="detalle de producto" accept=".jpg">
             </form>
-            <img src="/img/img-TheFisherman-RiccardoFornoni-SecCreadores-Producto.jpg" class="descripcionIzq">
             </div>
             <div class="descripcionDer">
                 <form action="/producto" method="POST">
-                    <h1>Nombre del producto</h1>
-                    <input type="text" name="nombre del producto">
-                    <h3><i class="fas fa-user-circle"></i>Creador</h3>
-                    <input type="text" name="nombre del creador">
-                    <h3><i class="fas fa-user-circle"></i>Vendedor</h3>
-                    <input type="text" name="nombre del vendedor">
-                    <textarea name="descripcion del producto"></textarea>
+                    <input type="text" name="nombre del producto" placeholder="Nombre del producto">
+                    <br>
+                    <input type="text" name="nombre del creador" placeholder="Nombre del creador">
+                    <br>
+                    <input type="text" name="nombre del vendedor" placeholder="Nombre del vendedor">
+                    <br>
+                    <textarea name="descripcion del producto" placeholder="Describe el producto"></textarea>
                     <br>
                     <button type="submit" class="botonExtra">Cargar</button>
                     <br>
-                    <button type="submit"class="botonPrincipal">Editar</button>
+                    <button type="submit"class="botonExtra">Editar</button>
                 </form>
             </div>
-        
-        </div>
-        <h2>Más del creador</h2>
-        <div class="masDelCreador">
-            <img src="/img/img-UniMiniFlat-RiccardoFornoni-MasDelCreador.jpg">
-            <img src="/img/img-Mid70s-RiccardoFornoni-MasDelCreador.jpg">
-            <img src="/img/img-IlVeliero-RiccardoFornoni-SecPopulares-MasDelCreador.jpg">
-        </div>
-        <h2>Más del vendedor</h2>
-        <div class="masDelVendedor">
-            <img src="/img/imgsDeMas/camilleCésarBoldt4.jpg">
-            <img src="/img/img-TheBirdBath-RiccardoFornoni-MasDelVendedor.jpg">
-            <img src="/img/img-Anxiety-Wbevaegelse-SecPopulares-MasDelVendedor.jpg">
-        </div>
-        <h2>Similares</h2>
-        <div class="similares">
-            <img src="/img/img-PurpleEvening-FrancescoFlore-SecPopulares-Similares.jpg">
-            <img src="/img/img-LaVillaAuBordDeL'eau-CamilleCésarBoldt-SecPopulares.jpg">
-            <img src="/img/img-Stairway-PeterTarka-SecPopulares-Similares.png">
-            <video controls>
-                <source src="/img/vid-Lavish-JoAnieCharland-Similares.mp4" type="video/mp4">
-            </video>
-        </div>
-    </main>
+     </main>
 
     <!-- footer -->
     <%- include('../partials/footer') %>
