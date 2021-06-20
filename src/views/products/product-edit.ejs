@@ -22,29 +22,22 @@
         <div class="portada">
             <form action="/producto" method="POST">
                 <input type="file" name="portada" accept=".jpg">
-        </form>
-        </div>
-        <div class="descripcion">
-            <div>
-                <form action="/producto" method="POST">
-                    <input type="file" name="detalle de producto" accept=".jpg">
+                <br>
+                <input type="file" name="detalle de producto" accept=".jpg">
+                <br>
+                <input type="text" name="nombre del producto" placeholder="Nombre del producto">
+                <br>
+                <input type="text" name="nombre del creador" placeholder="Nombre del creador">
+                <br>
+                <input type="text" name="nombre del vendedor" placeholder="Nombre del vendedor">
+                <br>
+                <textarea name="descripcion del producto" placeholder="Describe el producto"></textarea>
+                <br>
+                <button type="submit" class="botonExtra">Cargar</button>
+                <br>
+                <button type="submit"class="botonExtra">Editar</button>
             </form>
-            </div>
-            <div class="descripcionDer">
-                <form action="/producto" method="POST">
-                    <input type="text" name="nombre del producto" placeholder="Nombre del producto">
-                    <br>
-                    <input type="text" name="nombre del creador" placeholder="Nombre del creador">
-                    <br>
-                    <input type="text" name="nombre del vendedor" placeholder="Nombre del vendedor">
-                    <br>
-                    <textarea name="descripcion del producto" placeholder="Describe el producto"></textarea>
-                    <br>
-                    <button type="submit" class="botonExtra">Cargar</button>
-                    <br>
-                    <button type="submit"class="botonExtra">Editar</button>
-                </form>
-            </div>
+        </div>
      </main>
 
     <!-- footer -->
