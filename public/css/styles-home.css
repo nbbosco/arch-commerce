@@ -222,3 +222,28 @@ footer {
     font-size: 10px;
     padding-right: 1%;
 }
+
+
+
+
+/* === MEDIA QUERIES === */
+
+/*smartphones chicos*/
+@media (max-width: 480px){
+
+}
+
+/*tablets y smartphones grandes*/
+@media (min-width: 481px){
+
+}
+
+/*laptops y tablets grandes*/
+@media (min-width: 769px){
+
+}
+
+/*monitores grandes*/
+@media (min-width: 1280px){
+
+}
