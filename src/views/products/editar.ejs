@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de Edición de producto</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/header-footer.css">
+    <link rel="stylesheet" href="/css/styles-formulario.css">
+
+</head>
+<body>
+    <!-- header -->
+    <%- include('../partials/header') %>
+
+     <form action="/producto" method="PUT" class="formulario">
+        <br>
+        <div class="control-formulario">
+            <h3>Producto a editar</h3>
+            <input type="text" name="id" placeholder="ID del producto" class="control" required>
+        </div>
+        <div class="control-formulario">
+            <h3>Perfil del usuario</h3>
+            <label class="radio"><input type="radio" name="perfil" ></input>Creador</label>
+            <label class="radio"><input type="radio" name="perfil" ></input>Vendedor</label>
+        </div>
+        <div class="control-formulario">
+            <input type="text" name="creador" placeholder="Nombre del creador" class="control" required>
+        </div>
+        <div class="control-formulario">
+            <input type="text" name="vendedor" placeholder="Nombre del vendedor" class="control" required>
+        </div>
+        <div class="control-formulario">
+            <h3>Sobre el producto</h3>
+            <p>Fecha de creacion</p>
+            <input type="date" name="fecha" min='1900-01-01' max="2010-01-01" class="control">
+            <p>Precio base de la subasta</p>
+            <input type="number" name="precio" placeholder="Valor en ETH" class="control" required>
+        </div>
+        <div class="control-formulario">
+            <input type="text" name="nombreProducto" placeholder="Nombre del producto" minlength="3" class="control" required>
+        </div>
+        <div class="control-formulario">
+            <textarea name="descripcion" placeholder="Describe el producto..." class="control"></textarea>
+        </div>
+        <div class="control-formulario">
+            <h3>Categoria</h3>
+            <label class="check"><input type="checkbox" name="categoria" value="electro"></input>Animación</label>
+            <br>
+            <label class="check"><input type="checkbox" name="categoria" value="moda"></input>3d</label>
+            <br>
+            <label class="check"><input type="checkbox" name="categoria" value="hogar"></input>Ilustración</label>
+            <br>
+            <label class="check"><input type="checkbox" name="categoria" value="jugeteria"></input>Surreal</label>
+            <br>
+            <label class="check"><input type="checkbox" name="categoria" value="vidaSana"></input>Raro</label>
+            <br>
+            <label class="check"><input type="checkbox" name="categoria" value="vidaSana"></input>Color</label>
+            <br>
+            <label class="check"><input type="checkbox" name="categoria" value="vidaSana"></input>Abstracto</label>
+            <br>
+            <label class="check"><input type="checkbox" name="categoria" value="vidaSana"></input>Otro</label>
+        </div>
+        <div class="control-formulario">
+            <h3>Subir archivos</h3>
+            <p>Imagen principal del producto</p>
+            <input type="file" name="portada" accept="image/*" class="control"></input>
+            <p>Archivo original del producto</p>
+            <input type="file" name="productoOriginal" accept="video/*" class="control"></input>
+        </div>
+        <button type="submit" class="boton-formulario">Editar</button>
+        <button type="reset" class="boton-formulario">Borrar</button>
+    </form>
+    <!-- footer -->
+    <%- include('../partials/footer') %>
+    
+</body>
+</html>

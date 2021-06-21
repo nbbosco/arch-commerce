@@ -4,7 +4,9 @@ const productController = {
     producto: (req, res) => {
         res.render('./products/producto')},
     crear: (req, res) => {
-        res.render('./products/product-edit')},
+        res.render('./products/crear')},
+    editar: (req, res) => {
+        res.render('./products/editar')},
 }
 
 module.exports = productController;

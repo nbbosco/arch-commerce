@@ -47,21 +47,20 @@ footer {
     font-style: normal;
 }
 
-.footerizquierda01{
-    width: 12.5%;
-    text-align: left;
+.footer-seccion {
     font-size: 10px;
+    width: 12.5%;
+}
+
+.footerizquierda01{
+    text-align: left;
     padding-left: 1%;
 }
 .footerizquierda02{
-    width: 12.5%;;
     text-align: center;
-    font-size: 10px;
 }
 .footerizquierda03{
-    width: 12.5%;;
     text-align: right;
-    font-size: 10px;
 }
 .footercentro{
     width: 25%;
@@ -69,19 +68,15 @@ footer {
     font-size: 12px;
 }
 .footerderecha01 {
-    width: 12.5%;;
     text-align: left;
-    font-size: 10px;
+    
 }
 .footerderecha02 {
-    width: 12.5%;;
     text-align: center;
-    font-size: 10px;
+    
 }
 .footerderecha03 {
-    width: 12.5%;;
     text-align: right;
-    font-size: 10px;
     padding-right: 1%;
 }
 
@@ -107,5 +102,10 @@ footer {
 
 /*monitores grandes*/
 @media (min-width: 1280px){
-
+    .footer-seccion{
+        font-size: 12px;
+    }
+    .footercentro{
+        font-size: 14px;
+    }
 }
