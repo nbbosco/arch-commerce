@@ -12,13 +12,13 @@
 * ¿Qué dejar de hacer?
 
 ## ¿Qué comenzar a hacer?
-Ser más pragmáticos.
+Ser más pragmáticos. Establecer un cronograma diario/semanal que nos permita poner deadlines claros.
 
 ## ¿Qué continuar haciendo?
 Mantener la comunicación clara y activa. Mantener la buena onda. Definir objetivos a corto, mediano y largo plazo. Reconocer a cada uno del equipo por las cosas que ha hecho.
 
 ## ¿Qué hacer menos?
-Individualizar las tareas y definir un integrante por pagina. 
+Individualizar las tareas y definir un integrante por pagina. Dejar las cosas para último momento.
 
 ## ¿Qué dejar de hacer?
 Brainstorming sin filtrar y especificar las mejores ideas.
