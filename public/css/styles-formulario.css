@@ -1,0 +1,51 @@
+
+.formulario {
+    padding: 20px 15px;
+    background-color: #0d435c;
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+.control-formulario {
+    margin-bottom: 45px;
+    text-align: left; 
+    margin-left: 10%;
+}
+.control-formulario h3 {
+    margin: -22.5px 0 22.5px;
+    display: block;
+    text-align: left;
+    color: #b8b451;
+}
+.control{
+    width: 88.5%;
+    padding: 8px;
+    border-radius: 5px;
+    border: solid 1px var(--light-gray);
+}
+.radio{
+    margin-left: 25px;
+}
+.radio input{
+    margin-right: 25px;
+}
+.check{
+    margin-left: 25px
+}
+.check input{
+    margin: 0 25px 40px 0;
+}
+.boton-formulario:hover{
+    background-color: #b8b451;
+}
+.boton-formulario{
+    width: 40%;
+    background-color: #a6a597;
+    border: none;
+    font-size: 20px;
+    color:#ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: all 450ms;
+}
