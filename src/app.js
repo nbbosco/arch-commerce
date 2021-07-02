@@ -16,4 +16,9 @@ app.listen(process.env.PORT || 3000, function() {
     console.log("Servidor corriendo en el puerto 3000");
 });
 
+//Localhost
+// app.listen(3000, () => {
+//     console.log("Servidor corriendo");
+// });
+
 app.use('/', mainRoutes, productsRoutes, usersRoutes);
