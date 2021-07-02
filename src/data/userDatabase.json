@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "contraseña": "",
+        "telefono": "",
+        "fechaNacimiento": "",
+        "fotoPerfil": "",
+        "billetera": "",
+        "creador": false,
+        "coleccionista": false,
+        "fechaInscripcion": "",
+        "productosCreados": "",
+        "productosColeccionados": ""
+
+    }
+]
