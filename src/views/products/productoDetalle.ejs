@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de Detalle de producto</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/header-footer.css">
+    <link rel="stylesheet" href="/css/styles-producto.css">
+
+</head>
+<body>
+    <!-- header -->
+    <%- include('../partials/header') %>
+
+    <main>
+        <div class="descripcion">
+            <div>
+                <img src="/img/<%=productoEnDetalle.imagen%>" class="descripcionIzq">
+            </div>
+            <div class="descripcionDer">
+                <h1><%=productoEnDetalle.nombreProducto%></h1>
+                <h3><i class="fas fa-user-circle"></i><%=productoEnDetalle.creador%></h3>
+                <h3><i class="fas fa-user-circle"></i><%=productoEnDetalle.vendedor%></h3>
+                <p><%=productoEnDetalle.descripcion%></p>
+                <p><%=productoEnDetalle.fechaDeCreacion%></p>
+                <button class="botonExtra"><%=productoEnDetalle.categoria%></button>
+                <br>
+                <a href="/products/carrito">
+                <button class="botonPrincipal">Añadir al carrito / Ofertas</button>
+                </a>
+                <br>
+                <br>
+                <p>Mayor oferta: <i style="font-weight:bold">$<%=productoEnDetalle.precio%></i><a href="#"><i style="color:orangered"> Ver ofertas recientes</i></p></a>
+            </div>
+        </div>
+        <h2>Más del creador</h2>
+        <div class="masDelCreador">
+            <img src="/img/img-UniMiniFlat-RiccardoFornoni-MasDelCreador.jpg">
+            <img src="/img/img-Mid70s-RiccardoFornoni-MasDelCreador.jpg">
+            <img src="/img/img-IlVeliero-RiccardoFornoni-SecPopulares-MasDelCreador.jpg">
+        </div>
+        <h2>Más del vendedor</h2>
+        <div class="masDelVendedor">
+            <img src="/img/imgsDeMas/camilleCésarBoldt4.jpg">
+            <img src="/img/img-TheBirdBath-RiccardoFornoni-MasDelVendedor.jpg">
+            <img src="/img/img-Anxiety-Wbevaegelse-SecPopulares-MasDelVendedor.jpg">
+        </div>
+        <h2>Similares</h2>
+        <div class="similares">
+            <img src="/img/img-PurpleEvening-FrancescoFlore-SecPopulares-Similares.jpg">
+            <img src="/img/img-LaVillaAuBordDeL'eau-CamilleCésarBoldt-SecPopulares.jpg">
+            <img src="/img/img-Stairway-PeterTarka-SecPopulares-Similares.png">
+            <video controls>
+                <source src="/img/vid-Lavish-JoAnieCharland-Similares.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <%- include('../partials/footer') %>
+    
+</body>
+</html>

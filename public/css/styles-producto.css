@@ -117,6 +117,14 @@ main a{
     border-radius: 10px;
 }
 
+.centro {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    width: 500px;
+}
+
 
 
 

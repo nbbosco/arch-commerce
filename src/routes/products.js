@@ -1,11 +1,20 @@
-const productsController = require('./../controllers/productController')
+const productsController = require('../controllers/productController');
 
 const express = require('express');
-const routes = express.Router();
+const router = express.Router();
 
-routes.get('/carrito',productsController.carrito)
-routes.get('/producto',productsController.producto)
-routes.get('/producto/crear',productsController.crear)
-routes.get('/producto/editar',productsController.editar)
+router.get('/', productsController.producto); 
+router.get('/carrito', productsController.carrito)
 
-module.exports = routes;
+router.get('/create', productsController.crear); 
+router.post('/create', productsController.store); 
+
+router.get('/:id', productsController.detalle); 
+
+router.get('/:id/edit', productsController.editar); 
+// router.put('/:id', productsController.update); 
+
+// router.delete('/:id', productsController.eliminar); 
+
+
+module.exports = router;
