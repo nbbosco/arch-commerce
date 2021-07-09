@@ -67,10 +67,13 @@ main a{
     text-align: center;
 }
 .botonExtra {
-    background-color: #a6a597;
-    width: 40%;  
-    height: 20px;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    background-color: #a6a597;
+    width: 50%;  
+    height: 20px;
+    margin: auto;
 }
 .botonPrincipal {
     background-color: #b8b451;

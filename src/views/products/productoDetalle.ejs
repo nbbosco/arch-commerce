@@ -29,8 +29,11 @@
                 <h3><i class="fas fa-user-circle"></i><%=productoEnDetalle.vendedor%></h3>
                 <p><%=productoEnDetalle.descripcion%></p>
                 <p><%=productoEnDetalle.fechaDeCreacion%></p>
-                <button class="botonExtra"><%=productoEnDetalle.categoria%></button>
-                <br>
+                <p><%=productoEnDetalle.categoria%></p>
+                <a href="/products/<%= productoEnDetalle.id %>/edit"><button class="botonExtra">Editar</button></a>
+                <form action="/products/<%= productoEnDetalle.id%>?_method=DELETE" method="POST" onsubmit="return confirm('¿Estas seguro que queres borrar?')">
+                    <button type="submit" class="botonExtra">Eliminar</button>
+                </form>
                 <a href="/products/carrito">
                 <button class="botonPrincipal">Añadir al carrito / Ofertas</button>
                 </a>

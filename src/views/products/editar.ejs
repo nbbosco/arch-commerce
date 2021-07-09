@@ -17,61 +17,67 @@
 <body>
     <!-- header -->
     <%- include('../partials/header') %>
+    <!-- <br>
+    <div class="control-formulario">
+        <h3>Producto a Editar (id)</h3>
+        <a href="/products/input type="text" name="id" id="id" placeholder="<%=productoEnDetalle.id%>" class="control" required>
+    </div> -->
 
-     <form action="/producto" method="PUT" class="formulario">
+     <form action="/products/<%= productoEnDetalle.id%>?_method=PUT/edit" method="POST" class="formulario">
         <br>
         <div class="control-formulario">
-            <h3>Producto a editar</h3>
-            <input type="text" name="id" placeholder="ID del producto" class="control" required>
-        </div>
-        <div class="control-formulario">
             <h3>Perfil del usuario</h3>
-            <label class="radio"><input type="radio" name="perfil" ></input>Creador</label>
-            <label class="radio"><input type="radio" name="perfil" ></input>Vendedor</label>
+            <label class="radio"><input type="radio" name="perfil" id="perfil"></input>Creador</label>
+            <label class="radio"><input type="radio" name="perfil" id="perfil" ></input>Vendedor</label>
         </div>
         <div class="control-formulario">
-            <input type="text" name="creador" placeholder="Nombre del creador" class="control" required>
+            <p>Creador</p>
+            <input type="text" name="creador" id="creador" placeholder="<%=productoEnDetalle.creador%>" class="control" required>
         </div>
         <div class="control-formulario">
-            <input type="text" name="vendedor" placeholder="Nombre del vendedor" class="control" required>
+            <p>Vendedor</p>
+            <input type="text" name="vendedor" id="vendedor" placeholder="<%=productoEnDetalle.coleccionista%>" class="control" required>
         </div>
         <div class="control-formulario">
             <h3>Sobre el producto</h3>
-            <p>Fecha de creacion</p>
-            <input type="date" name="fecha" min='1900-01-01' max="2010-01-01" class="control">
+            <p>Fecha de creacion: <%=productoEnDetalle.fechaDeCreacion%></p>
+            <input type="date" name="fechaDeCreacion" id="fechaDeCreacion" min='1900-01-01' max="2010-01-01" class="control">
             <p>Precio base de la subasta</p>
-            <input type="number" name="precio" placeholder="Valor en ETH" class="control" required>
+            <input type="number" name="precio" id="precio" placeholder="<%=productoEnDetalle.precio%>ETH" class="control" required>
         </div>
         <div class="control-formulario">
-            <input type="text" name="nombreProducto" placeholder="Nombre del producto" minlength="3" class="control" required>
+            <p>Nombre Producto</p>
+            <input type="text" name="nombreProducto" id="nombreProducto" placeholder="<%=productoEnDetalle.nombreProducto%>" minlength="3" class="control" required>
         </div>
         <div class="control-formulario">
-            <textarea name="descripcion" placeholder="Describe el producto..." class="control"></textarea>
+            <p>Descripcion</p>
+            <textarea name="descripcion" id="descripcion" placeholder="<%=productoEnDetalle.descripcion%>" class="control"></textarea>
         </div>
         <div class="control-formulario">
             <h3>Categoria</h3>
-            <label class="check"><input type="checkbox" name="categoria" value="electro"></input>Animación</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="electro"></input>Animación</label>
             <br>
-            <label class="check"><input type="checkbox" name="categoria" value="moda"></input>3d</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="moda"></input>3d</label>
             <br>
-            <label class="check"><input type="checkbox" name="categoria" value="hogar"></input>Ilustración</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="hogar"></input>Ilustración</label>
             <br>
-            <label class="check"><input type="checkbox" name="categoria" value="jugeteria"></input>Surreal</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="jugeteria"></input>Surreal</label>
             <br>
-            <label class="check"><input type="checkbox" name="categoria" value="vidaSana"></input>Raro</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="vidaSana"></input>Raro</label>
             <br>
-            <label class="check"><input type="checkbox" name="categoria" value="vidaSana"></input>Color</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="vidaSana"></input>Color</label>
             <br>
-            <label class="check"><input type="checkbox" name="categoria" value="vidaSana"></input>Abstracto</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="vidaSana"></input>Abstracto</label>
             <br>
-            <label class="check"><input type="checkbox" name="categoria" value="vidaSana"></input>Otro</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="vidaSana"></input>Otro</label>
         </div>
         <div class="control-formulario">
             <h3>Subir archivos</h3>
             <p>Imagen principal del producto</p>
-            <input type="file" name="portada" accept="image/*" class="control"></input>
+            <img src="../../img/<%=productoEnDetalle.imagen%>" style="width: 150px;">
+            <input type="file" name="imagen" id="imagen" accept="image/*" class="control"></input>
             <p>Archivo original del producto</p>
-            <input type="file" name="productoOriginal" accept="video/*" class="control"></input>
+            <input type="file" name="productoOriginal" id="productoOriginal" accept="video/*" class="control"></input>
         </div>
         <button type="submit" class="boton-formulario">Editar</button>
         <button type="reset" class="boton-formulario">Borrar</button>

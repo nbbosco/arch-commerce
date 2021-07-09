@@ -18,7 +18,7 @@
     <!-- header -->
     <%- include('../partials/header') %>
 
-     <form action="/products/create" method="POST" class="formulario">
+     <form action="/products/create" method="POST" enctype="multipart/form-data" class="formulario">
         <br>
         <div class="control-formulario">
             <h3>Perfil del usuario</h3>
@@ -65,7 +65,7 @@
         <div class="control-formulario">
             <h3>Subir archivos</h3>
             <p>Imagen principal del producto</p>
-            <input type="file" name="imagen" id="imagen" accept="image/*" class="control"></input>
+            <input type="file" name="imagen" id="imagen" accept="image/*" class="control"></input> 
             <p>Archivo original del producto</p>
             <input type="file" name="productoOriginal" id="productoOriginal" accept="video/*" class="control"></input>
         </div>
