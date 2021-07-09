@@ -19,7 +19,8 @@ app.use(methodOverride('_method'));
 
 // ************ Template Engine ************
 app.set ('view engine', 'ejs');
-app.set('views', path.join(__dirname, './views'));
+// app.set('views', path.join(__dirname, '/views'));
+app.set('views', path.join(__dirname, '/views'));
 
 // ************ Sistema de Rutas ************
 const mainRoutes = require('./routes/main');
@@ -31,7 +32,7 @@ app.use('/products', productsRoutes);
 app.use('/users', usersRoutes);
 
 // ************ Visualizar ************
-app.listen(process.env.PORT || 3000, function() {
+app.listen((process.env.PORT || 3000), function() {
     console.log("Servidor corriendo en el puerto 3000");
 });
 
