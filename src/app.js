@@ -19,8 +19,7 @@ app.use(methodOverride('_method'));
 
 // ************ Template Engine ************
 app.set ('view engine', 'ejs');
-// app.set('views', path.join(__dirname, '/views'));
-app.set('views', path.join(__dirname, './views'));
+app.set('views', path.join(__dirname, '/views'));
 
 // ************ Sistema de Rutas ************
 const mainRoutes = require('./routes/main');

@@ -19,7 +19,7 @@ let multerDiskStorage = multer.diskStorage({
 let uploadFile = multer({storage: multerDiskStorage});
 
 router.get('/', productsController.producto); 
-router.get('/carrito', productsController.carrito)
+router.get('/carrito/', productsController.carrito)
 
 router.get('/create', productsController.crear); 
 router.post('/create', uploadFile.single('imagen'), productsController.store); 

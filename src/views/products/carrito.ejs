@@ -32,46 +32,17 @@
             <p>Fecha</p>
             <p>Billetera</p>
         </div>
-
+        <% for(let i=0; i<9;i++) { %>
         <div class="tabla">
             <table cellpadding="10px">
                 <tr>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                    <td>$12.050</td>
-                    <td>D/M/A</td>
+                    <td><%= productos[i].nombreProducto%></td>
+                    <td><%= productos[i].precio%>ETH</td>
+                    <td><%= productos[i].fechaDeCreacion%></td>
                     <td>$30.000</td>
                 </tr>
-                <tr>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                    <td>$1.000</td>
-                    <td>D/M/A</td>
-                    <td>$20.000</td>
-                </tr>
-                <tr>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                    <td>$2.000</td>
-                    <td>D/M/A</td>
-                    <td>$6.000</td>
-                </tr>
-                <tr>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                    <td>$5.000</td>
-                    <td>D/M/A</td>
-                    <td>$10.600</td>
-                </tr>
-                <tr>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                    <td>$3.500</td>
-                    <td>D/M/A</td>
-                    <td>$8.500</td>
-                </tr>
-                <tr>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                    <td>$1.500</td>
-                    <td>D/M/A</td>
-                    <td>$6.500</td>
-                </tr>
             </table>
+            <% } %>
         </div>
         <br>
     </main>

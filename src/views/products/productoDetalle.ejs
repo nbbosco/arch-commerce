@@ -26,12 +26,12 @@
             <div class="descripcionDer">
                 <h1><%=productoEnDetalle.nombreProducto%></h1>
                 <h3><i class="fas fa-user-circle"></i><%=productoEnDetalle.creador%></h3>
-                <h3><i class="fas fa-user-circle"></i><%=productoEnDetalle.vendedor%></h3>
+                <h3><i class="fas fa-user-circle"></i><%=productoEnDetalle.coleccionista%></h3>
                 <p><%=productoEnDetalle.descripcion%></p>
                 <p><%=productoEnDetalle.fechaDeCreacion%></p>
                 <p><%=productoEnDetalle.categoria%></p>
                 <a href="/products/<%= productoEnDetalle.id %>/edit"><button class="botonExtra">Editar</button></a>
-                <form action="/products/<%= productoEnDetalle.id%>?_method=DELETE" method="POST" onsubmit="return confirm('¿Estas seguro que queres borrar?')">
+                <form action="/products/<%= productoEnDetalle.id%>?_method=DELETE" method="POST" onsubmit="return confirm('¿Estas seguro que queres borrar <%=productoEnDetalle.nombreProducto%>?')">
                     <button type="submit" class="botonExtra">Eliminar</button>
                 </form>
                 <a href="/products/carrito">
@@ -44,21 +44,36 @@
         </div>
         <h2>Más del creador</h2>
         <div class="masDelCreador">
-            <img src="/img/img-UniMiniFlat-RiccardoFornoni-MasDelCreador.jpg">
-            <img src="/img/img-Mid70s-RiccardoFornoni-MasDelCreador.jpg">
-            <img src="/img/img-IlVeliero-RiccardoFornoni-SecPopulares-MasDelCreador.jpg">
+        <% for(let i=0; i<productos.length;i++){ %>
+        <%    let array = []%>
+        <%    if (productos[i].creador==productoEnDetalle.creador){%>
+            <a class="masDelCreador" href="/products/<%=productos[i].id %>">
+            <img src="/img/<%=productos[i].imagen%>">
+            </a>
+            <% } %>
+            <% }%>
         </div>
         <h2>Más del vendedor</h2>
         <div class="masDelVendedor">
-            <img src="/img/imgsDeMas/camilleCésarBoldt4.jpg">
-            <img src="/img/img-TheBirdBath-RiccardoFornoni-MasDelVendedor.jpg">
-            <img src="/img/img-Anxiety-Wbevaegelse-SecPopulares-MasDelVendedor.jpg">
+            <% for(let i=0; i<3;i++){ %>
+                <%    let array = []%>
+                <%    if (productos[i].coleccionista==productoEnDetalle.coleccionista){%>
+                    <a href="/products/<%=productos[i].id %>">
+                        <img src="/img/<%=productos[i].imagen%>">
+                    </a>
+                    <% } %>
+                    <% }%>
         </div>
         <h2>Similares</h2>
         <div class="similares">
-            <img src="/img/img-PurpleEvening-FrancescoFlore-SecPopulares-Similares.jpg">
-            <img src="/img/img-LaVillaAuBordDeL'eau-CamilleCésarBoldt-SecPopulares.jpg">
-            <img src="/img/img-Stairway-PeterTarka-SecPopulares-Similares.png">
+            <% for(let i=0; i<3;i++){ %>
+                <%    let array = []%>
+                <%    if (productos[i].categoria==productoEnDetalle.categoria){%>
+                    <a href="/products/<%=productos[i].id %>">
+                        <img src="/img/<%=productos[i].imagen%>">
+                    </a>
+                    <% } %>
+                    <% }%>
             <video controls>
                 <source src="/img/vid-Lavish-JoAnieCharland-Similares.mp4" type="video/mp4">
             </video>

@@ -22,14 +22,14 @@
         <br>
         <div class="control-formulario">
             <h3>Perfil del usuario</h3>
-            <label class="radio"><input type="radio" name="perfil" id="perfil"></input>Creador</label>
-            <label class="radio"><input type="radio" name="perfil" id="perfil" ></input>Vendedor</label>
+            <label class="radio"><input type="radio" name="perfil" id="perfil" value="Creador"></input>Creador</label>
+            <label class="radio"><input type="radio" name="perfil" id="perfil" value="Vendedor"></input>Vendedor</label>
         </div>
         <div class="control-formulario">
             <input type="text" name="creador" id="creador" placeholder="Nombre del creador" class="control" required>
         </div>
         <div class="control-formulario">
-            <input type="text" name="vendedor" id="vendedor" placeholder="Nombre del vendedor" class="control" required>
+            <input type="text" name="coleccionista" id="coleccionista" placeholder="Nombre del vendedor / coleccionista" class="control" required>
         </div>
         <div class="control-formulario">
             <h3>Sobre el producto</h3>
@@ -42,25 +42,28 @@
             <input type="text" name="nombreProducto" id="nombreProducto" placeholder="Nombre del producto" minlength="3" class="control" required>
         </div>
         <div class="control-formulario">
+            <input type="text" name="coleccion" id="coleccion" placeholder="Colección (opcional)" minlength="3" class="control">
+        </div>
+        <div class="control-formulario">
             <textarea name="descripcion" id="descripcion" placeholder="Describe el producto..." class="control"></textarea>
         </div>
         <div class="control-formulario">
             <h3>Categoria</h3>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="electro"></input>Animación</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Animación"></input>Animación</label>
             <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="moda"></input>3d</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="3d"></input>3d</label>
             <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="hogar"></input>Ilustración</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Ilustración"></input>Ilustración</label>
             <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="jugeteria"></input>Surreal</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Surreal"></input>Surreal</label>
             <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="vidaSana"></input>Raro</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Raro"></input>Raro</label>
             <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="vidaSana"></input>Color</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Color"></input>Color</label>
             <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="vidaSana"></input>Abstracto</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Abstracto"></input>Abstracto</label>
             <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="vidaSana"></input>Otro</label>
+            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Otro"></input>Otro...</label>
         </div>
         <div class="control-formulario">
             <h3>Subir archivos</h3>
@@ -68,6 +71,10 @@
             <input type="file" name="imagen" id="imagen" accept="image/*" class="control"></input> 
             <p>Archivo original del producto</p>
             <input type="file" name="productoOriginal" id="productoOriginal" accept="video/*" class="control"></input>
+            <p>Formato</p>
+            <label class="radio"><input type="radio" name="formato" id="formato" value="jpg"></input>Imagen</label>
+            <label class="radio"><input type="radio" name="formato" id="formato" value="mp4"></input>Video</label>
+            <label class="radio"><input type="radio" name="formato" id="formato" value="3d"></input>Modelo</label>
         </div>
         <button type="submit" class="boton-formulario">Crear</button>
         <button type="reset" class="boton-formulario">Borrar</button>

@@ -18,7 +18,7 @@ const productController = {
 				var productoEncontrado = products[i];
 			}
 		}
-		res.render('./products/productoDetalle', {productoEnDetalle: productoEncontrado});
+		res.render('./products/productoDetalle', {productoEnDetalle: productoEncontrado, productos: products});
 	},
 
     crear: (req, res) => {
@@ -30,7 +30,7 @@ const productController = {
         let idNuevo = products[products.length-1].id + 1;
         let nuevoObjeto = Object.assign({id: idNuevo},req.body,{imagen:nombreImagen});
         products.push(nuevoObjeto);
-        fs.writeFileSync(productsFilePath, JSON.stringify(products,null,''));
+        fs.writeFileSync(productsFilePath, JSON.stringify(products,null,4));
         res.redirect('/');
     },
 
@@ -69,7 +69,7 @@ const productController = {
 			}
 		}
 
-		fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ''));
+		fs.writeFileSync(productsFilePath, JSON.stringify(products,null,4));
 		fs.unlinkSync(path.join(__dirname,'../../public/img/' + imagenAnterior));
 		res.render('productoDetalle', {productoEnDetalle: productoEncontrado});
 	},
@@ -77,13 +77,13 @@ const productController = {
     destroy : (req, res) => {
 		let idProducto= req.params.id
 		for(let i=0;i<products.length;i++){
-			if (products[i].id==idProducto){}
+			if (products[i].id==idProducto){
 				var nombreImagen = products[i].imagen;
 				products.splice(i,1);
 				break;
 			}
-			
-			fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ''));
+        }
+			fs.writeFileSync(productsFilePath, JSON.stringify(products,null,4));
 			fs.unlinkSync(path.join(__dirname,'../../public/img/' + nombreImagen));
 			res.render('home', {productos: products});
 		},

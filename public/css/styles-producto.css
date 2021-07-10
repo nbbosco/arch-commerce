@@ -92,11 +92,10 @@ main a{
     margin: auto;
     width: 90vw;
 }
-.masDelCreador img{
+.masDelCreador a img{
     width: 30%;
     border-radius: 10px;
 }
-
 .masDelVendedor {
     display: flex;
     justify-content: space-between;
