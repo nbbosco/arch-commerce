@@ -53,149 +53,74 @@
                 <h5>Florent Boston</h5>
                 <p>VALOR</p>
             </div>
-
+               
+            <% for (let i=0; i<productos.length; i++) {%>
             <div>
-                <img src="/img/img-OrangeHaze-Menossi-SecPrincipal.jpg">
-                <h3>Oragne Haze</h3>
-                <h5>Menossi</h5>
-                <p>VALOR</p>
+                <% if(productos[i].seccion == "Principal"){%>
+                <a href="/products/<%= productos[i].id %> " class="estiloHref">   
+                <img src="/img/<%= productos[i].imagen %>">
+                <h3><%= productos[i].nombreProducto %></h3>
+                <h5><%= productos[i].creador %></h5>
+                <p>$<%= productos[i].precio %></p>
+             <% } %> 
+                </a>   
             </div>
+            <% } %> 
         </div>
-        <div class="sec-principal">
-            <div>
-                <video controls>
-                    <source src="/img/vid-Discoid-JoAnieCharland-PagPrincipal-SecPrincipal.mp4" type="video/mp4">
-                </video>
-                <div>
-                <h3>Discoid</h3>
-                <h5>Jo-Anie Charland</h5>
-            </div>
-            <div >
-                <p>VALOR</p>
-            </div>
-            </div>
-            
-            <div>
-                <img src="/img/img-AMoment-MattEmmett-SecPrincipal-MasDelVendedor.jpg">
-                <h3>A Moment</h3>
-                <h5>Matt Emmett</h5>
-                <p>VALOR</p>
-            </div>
-        </div>
-
+        
+        
+        
         <div class="sec-secundaria">
+            <h2>Secundaria</h2>
+            <% for (let i=0; i<productos.length; i++) {%>
             <div>
-                <img src="/img/img-ParisAndChill3-FlorentBoston-SecSecundaria.jpg">
-                <h3>Paris and Chill 3/5</h3>
-                <h5>Florent Boston</h5>
-                <p>VALOR</p>
+            <% if(productos[i].seccion == "Secundaria"){%>
+                <a href="/products/<%= productos[i].id %> " class="estiloHref">                
+                <img src="/img/<%= productos[i].imagen %>">
+                <source src="/img/<%= productos[i].imagen %>" type="video/mp4">
+                <h3><%= productos[i].nombreProducto %></h3>
+                <h5><%= productos[i].creador %></h5>
+                <p>$<%= productos[i].precio %></p>
             </div>
+                </a>            
+            <% } %>         
+            <% } %>
+        </div>    
 
-            <div>
-                <video controls>
-                    <source src="/img/vid-CattelanHouse-Rek0de-SecSecundaria.mp4" type="video/mp4">
-                </video>
-                <h3>Cattelan House</h3>
-                <h5>Rek0de</h5>
-                <p>VALOR</p>
-            </div>
-
-            <div>
-                <img src="/img/img-DreamSceneNo.3-MrBuckley-SecSecundaria.jpg">
-                <h3>Dream scene No.3</h3>
-                <h5>Mr. Buckley</h5>
-                <p>VALOR</p>
-            </div>
-
-            <div>
-                <img src="/img/img-FortresHill-DesmondLo-SecSecundaria.jpg">
-                <h3>Fortres hill</h3>
-                <h5>Desmond Lo</h5>
-                <p>VALOR</p>
-            </div>
-
-            <div>
-                <img src="/img/img-Interior&Reflections-FrancescoFlore-SecSecundaria.jpg">
-                <h3>Interior & Reflections</h3>
-                <h5>Francesco Flore</h5>
-                <p>VALOR</p>
-            </div>
-
-            <div>
-                <img src="/img/img-TheShadow-KennyFlatten-SecSecundaria.jpg">
-                <h3>The shadow</h3>
-                <h5>KennyFlatten</h5>
-                <p>VALOR</p>
-            </div>
-        </div>
-
-        <div class="sec-creadores">
+        <div class="sec-creadores">            
             <h2>Creadores</h2>
+            <% for (let i=0; i<productos.length; i++) {%>
             <div class="sec-creadores-imagenes">
-            <div>
-                <img src="/img/img-BauHaus-PeterTarka-SecCreadores.jpg">
-                <h5><i class="fas fa-user-circle"></i>Peter Tarka</h5>
-            </div>
-
-            <div>
-                <img src="/img/img-Lévitation-CamilleCésarBoldt-SecCreadores.jpg">
-                <h5><i class="fas fa-user-circle"></i>Camille César Boldt</h5>
-            </div>
-
-            <div>
-                <img src="/img/img-DreanSceneNo.2-MrBuckley-SecCreadores.jpg">
-                <h5><i class="fas fa-user-circle"></i>Mr. Buckley</h5>
-            </div>
-
-            <div>
-                <img src="/img/img-NovemberLights-FrancescoFlore-SecCreadores.jpg">
-                <h5><i class="fas fa-user-circle"></i>Francesco Flore</h5>
-            </div>
-
-            <div>
-                <img src="/img/img-ParisAndChill2-FlorentBoston-SecCreadores.jpg">
-                <h5><i class="fas fa-user-circle"></i>Florent Boston</h5>
-            </div>
-
-            <div>
-                <img src="/img/img-TheFisherman-RiccardoFornoni-SecCreadores-Producto.jpg">
-                <h5><i class="fas fa-user-circle"></i>Riccardo Fornoni</h5>
-            </div>
-
-            <div>
-                <img src="/img/img-Ocean-Wbevaegelse-SecCreadores.jpg">
-                <h5><i class="fas fa-user-circle"></i>Wbevaegelse</h5>
-            </div>
-
-            <div>
-                <img src="/img/img-SspIcc-DesmondLo-SecCreadores.jpg">
-                <h5><i class="fas fa-user-circle"></i>Desmond Lo</h5>
-            </div>
+                <a href="/products/<%= productos[i].id %> " class="estiloHref">          
+                <div>                               
+                    <% if(productos[i].seccion == "Creadores"){%>                         
+                    <img src="/img/<%= productos[i].imagen %> ">                                   
+                    <h5><i class="fas fa-user-circle"<%= productos[i].creador %>></i></h5>
+                    <h3><%= productos[i].nombreProducto %></h3>
+                    <p>$<%= productos[i].precio %></p>
+                </div>
+                </a> 
+            <% } %> 
+            <% } %>           
         </div>
-        </div>
-
+        
         <div class="sec-populares">
             <h2>Populares</h2>
+            <% for (let i=0; i<productos.length; i++) {%>
             <div class="sec-populares-imagenes">
-            <img src="/img/img-Islands-PeterTarka-SecPopulares.png">
-            <img src="/img/img-PurpleEvening-FrancescoFlore-SecPopulares-Similares.jpg">
-            <img src="/img/img-DreamSceneNo.1-MrBuckley-SecPopulares.jpg">
-            <img src="/img/img-LaVillaAuBordDeL'eau-CamilleCésarBoldt-SecPopulares.jpg">
-            <img src="/img/img-TheShadow(inColor)-KennyFlatten-SecPopulares.jpg">
-            <img src="/img/img-Abbys-DesmondLo-SecPopulares.jpg">
-            <img src="/img/img-CryptoPlace-Menossi-SecPopulares.jpg">
-            <img src="/img/img-Anxiety-Wbevaegelse-SecPopulares-MasDelVendedor.jpg">
-            <img src="/img/img-ParisAndChill4-FlorentBoston-SecPopulares.jpg">
-            <img src="/img/img-Transcendence-KennyFlatten-SecPopulares.jpg">
-            <img src="/img/img-Stairway-PeterTarka-SecPopulares-Similares.png">
-            <img src="/img/img-TheCallToExplore-MattEmmett-SecPopulares.jpg">
-            <img src="/img/img-EmpireOfGravity-Menossi-SecPopulares.jpg">
-            <img src="/img/img-PeachAndOranges-PeterTarka-SecPopulares.jpg">
-            <img src="/img/img-IlVeliero-RiccardoFornoni-SecPopulares-MasDelCreador.jpg">
-            <img src="/img/img-Poolside-PeterTarka-SecPopulares.jpg">
-            <img src="/img/img-Spiderland-BitErrror-SecPopulares.jpg">
-            <img src="/img/img-Andromeda-Menossi-SecPopulares.jpg">
-        </div>
+                <a href="/products/<%= productos[i].id %> " class="estiloHref"> 
+                <div>                  
+                    <% if(productos[i].seccion == "Populares"){%>                         
+                    <img src="/img/<%= productos[i].imagen %> ">
+                    <h3><%= productos[i].nombreProducto %></h3>
+                    <h5><%= productos[i].creador %></h5>
+                    <p>$<%= productos[i].precio %></p>                    
+                </div>
+                </a>
+                <% } %>
+            <% } %>     
+            </div>    
+        </div>   
     </div>
 
     </main>
