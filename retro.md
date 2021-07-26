@@ -22,3 +22,12 @@ Individualizar las tareas y definir un integrante por pagina. Dejar las cosas pa
 
 ## ¿Qué dejar de hacer?
 Brainstorming sin filtrar y especificar las mejores ideas.
+
+
+Spring 5
+
+¿Qué comenzar a hacer?
+Estar al dia con las prácticas y la ejecución de las mismas para efectivizar las futuras acciones.
+
+¿Qué continuar haciendo?
+Continuar con la comunicación clara y activa. Escuchar las nuevas ideas que van surgiendo. Mantener el espacio de autocrítica y reflexión interna. Definir los proximos objetivos. 
