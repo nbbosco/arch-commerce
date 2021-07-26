@@ -1,17 +1,70 @@
 const fs = require('fs');
 const path = require('path');
+const bcryptjs = require('bcryptjs');
+const { validationResult } = require('express-validator');
 
 const usersFilePath = path.join(__dirname, '../database/userDatabase.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
+const User = require('../models/User')
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const userController = {
     login: (req, res) => {
         res.render('./users/login')
     },
+    loginProcess: (req, res) => {
+        let userToLogin = User.findByField('email', req.body.email);
+        if(userToLogin){
+            let comparePassword = bcryptjs.compareSync(req.body.contraseña, userToLogin.contraseña);
+            if (comparePassword) {
+                return res.send('Ok puedes ingresar')
+            }
+        }
+
+        return res.render('./users/login', {
+            errors: {
+                email: {
+                    msg: 'Las credenciales son inválidas'
+                }
+            }
+        });
+    },
+    profile: (req, res) => {
+        res.render('./users/profile')
+    },
     registro: (req, res) => {
         res.render('./users/registro')
+    },
+    processRegister: (req, res) => {
+        const resultValidation = validationResult(req);
+
+        if (resultValidation.errors.length > 0) {
+            return res.render('users/registro', {
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            })
+        }
+        let userInDB = User.findByField('email', req.body.email);
+
+        if (userInDB) {
+            return res.render('users/registro', {
+                errors: {
+                    msg: 'Este email ya esta registrado'
+                },
+                oldData: req.body
+            })
+        }
+
+        let userToCreate = {
+            ...req.body,
+            contraseña: bcryptjs.hashSync(req.body.contraseña, 10),
+            avatar: req.file.filename
+        }
+
+        let userCreated = User.create(userToCreate);
+
+        return res.redirect('/users/login');
     },
     store: (req, res) => {
         let idNuevo = products[products.length-1].id + 1;
@@ -21,7 +74,13 @@ const userController = {
         res.redirect('/');
     },
     editar: (req, res) => {
-        res.render('./users/editar')
+        let idUsuario= req.params.id
+		for(let i=0;i<users.length;i++){
+			if (users[i].id==idUsuario){
+				var usuarioEncontrado = users[i];
+			}
+		}
+        res.render('./users/editar', {editar: usuarioEncontrado})
     },
     update: (req, res) => {
 		let valoresNuevos = req.body;

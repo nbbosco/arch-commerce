@@ -21,7 +21,7 @@
     <main>
         <div class="descripcion">
             <div>
-                <img src="/img/<%=productoEnDetalle.imagen%>" class="descripcionIzq">
+                <img src="/img/products/<%=productoEnDetalle.imagen%>" class="descripcionIzq">
             </div>
             <div class="descripcionDer">
                 <h1><%=productoEnDetalle.nombreProducto%></h1>
@@ -45,10 +45,9 @@
         <h2>Más del creador</h2>
         <div class="masDelCreador">
         <% for(let i=0; i<productos.length;i++){ %>
-        <%    let array = []%>
         <%    if (productos[i].creador==productoEnDetalle.creador){%>
             <a class="masDelCreador" href="/products/<%=productos[i].id %>">
-            <img src="/img/<%=productos[i].imagen%>">
+            <img src="/img/products/<%=productos[i].imagen%>">
             </a>
             <% } %>
             <% }%>
@@ -56,10 +55,9 @@
         <h2>Más del vendedor</h2>
         <div class="masDelVendedor">
             <% for(let i=0; i<3;i++){ %>
-                <%    let array = []%>
                 <%    if (productos[i].coleccionista==productoEnDetalle.coleccionista){%>
                     <a href="/products/<%=productos[i].id %>">
-                        <img src="/img/<%=productos[i].imagen%>">
+                        <img src="/img/products/<%=productos[i].imagen%>">
                     </a>
                     <% } %>
                     <% }%>
@@ -67,15 +65,14 @@
         <h2>Similares</h2>
         <div class="similares">
             <% for(let i=0; i<3;i++){ %>
-                <%    let array = []%>
                 <%    if (productos[i].categoria==productoEnDetalle.categoria){%>
                     <a href="/products/<%=productos[i].id %>">
-                        <img src="/img/<%=productos[i].imagen%>">
+                        <img src="/img/products/<%=productos[i].imagen%>">
                     </a>
                     <% } %>
                     <% }%>
             <video controls>
-                <source src="/img/vid-Lavish-JoAnieCharland-Similares.mp4" type="video/mp4">
+                <source src="/img/products/vid-Lavish-JoAnieCharland-Similares.mp4" type="video/mp4">
             </video>
         </div>
     </main>

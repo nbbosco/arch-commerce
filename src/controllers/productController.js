@@ -70,7 +70,7 @@ const productController = {
 		}
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(products,null,4));
-		fs.unlinkSync(path.join(__dirname,'../../public/img/' + imagenAnterior));
+		fs.unlinkSync(path.join(__dirname,'../../public/img/products/' + imagenAnterior));
 		res.render('productoDetalle', {productoEnDetalle: productoEncontrado});
 	},
 
@@ -84,7 +84,7 @@ const productController = {
 			}
         }
 			fs.writeFileSync(productsFilePath, JSON.stringify(products,null,4));
-			fs.unlinkSync(path.join(__dirname,'../../public/img/' + nombreImagen));
+			fs.unlinkSync(path.join(__dirname,'../../public/img/products/' + nombreImagen));
 			res.render('home', {productos: products});
 		},
 

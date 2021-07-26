@@ -100,7 +100,11 @@ main input{
     color: white;
 }
 
-
+.texto-error {
+    font-family: 'Playfair Display', serif;
+    color: red;
+    font-size: 12px;
+}
 
 
 /* === MEDIA QUERIES === */

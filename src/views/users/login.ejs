@@ -20,15 +20,21 @@
 
     <main>
       <div class ='mainizquierda01'>
-        <img src="../img/img-AMoment-MattEmmett-SecPrincipal-MasDelVendedor.jpg" alt="login">
+        <img src="../img/products/img-AMoment-MattEmmett-SecPrincipal-MasDelVendedor.jpg" alt="login">
       </div>
       <div class="mainderecha01">
+          <form action="/users/login" method="POST">
          <h1>¡Empieza a Coleccionar!</h1>
          <h5>Ingresá a la comunidad de intercambio digital entre creadores y coleccionistas</h5>
          <br>
-         <input type="text" placeholder="Nombre (será visto públicamente)" id="subdomain"/></input>
+         <input type="email" name="email" placeholder="Correo electrónico" id="subdomain"/>
+         <% if (locals.errors && errors.email) { %>
+          <div class="texto-error">
+            <%= errors.email.msg %>
+          </div>
+          <% } %>
          <br>
-         <input type="password" placeholder="Contraseña" id="subdomain"/></input>
+         <input type="password" name="contraseña" placeholder="Contraseña" id="subdomain"/></input>
          <br>
          <div class="ayudas">
             <p style="text-align: end;"><a href="#">Olvidaste tu contraseña?</a></p>
@@ -37,12 +43,13 @@
          <button style="text-align: end;" class="ingresar">Ingresar</button>
          <br>
          <div class= 'botones'>
-            <button class="botonesExtra"></button>
-            <button class="botonesExtra"></button>
+            <button class="botonesExtra"><a href='/users/editar'> Editar Usuario</a></button>
+            <button class="botonesExtra"><a href='/users/editar'> Eliminar Usuario</a></button>
          </div>
          <br>
          <p class='ayudas'>¿No tenes cuenta? <a href="registro" style="color:#b8b451">Registrate</a></p>
      </div>
+    </form>
     </main>
 
     <!-- footer -->

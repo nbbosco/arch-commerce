@@ -19,7 +19,7 @@
     <%- include('../partials/header') %>
 
     <main>
-        <form action="/users/registro" method="POST">
+        <form action="/users/registro" method="POST" enctype="multipart/form-data">
         <h1>Coleccionista</h1>
         <p>Conviérte en coleccionista y empieza a construir tu galeria de arte digital</p>
         <br>
@@ -37,23 +37,78 @@
         <br>
         <p>¿Ya estas registrado? <a href="/users/login" style="color:#b8b451">Ingresa</a></p>
         </form>
-        <form action="/users/registro" method="POST">
+        <form action="/users/registro" method="POST" enctype="multipart/form-data">
         <h1>Creador</h1>
         <p>Conviértete en creador y empieza a vender tus diseños digitales</p>
         <br>
-        <input type="text" name="nombre" placeholder="Nombre (será visto públicamente)" id="subdomain"/></input>
+        <input 
+            type="text" 
+            name="nombre" 
+            placeholder="Nombre (será visto públicamente)" 
+            id="subdomain" 
+            class="<%= locals.errors && errors.nombre ? 'invalido' : null %>"
+            value="<%= locals.oldData ? oldData.nombre : null %>"
+            >
+        <% if (locals.errors && errors.nombre) { %>
+            <div class="texto-error">
+               <%= errors.nombre.msg %>
+            </div>
+        <% } %>
         <br>
-        <input type="email" name="email" placeholder="Correo electrónico" id="subdomain"/></input>
+        <input 
+            type="email" 
+            name="email" 
+            placeholder="Correo electrónico" 
+            id="subdomain" 
+            class="<%= locals.errors && errors.email ? 'invalido' : null %>"
+            value="<%= locals.oldData ? oldData.email : null %>"
+            >
+        <% if (locals.errors && errors.email) { %>
+            <div class="texto-error">
+               <%= errors.email.msg %>
+            </div>
+        <% } %>
         <br>
-        <input type="password" name="contraseña" placeholder="Contraseña" id="subdomain"/></input>
+        <input 
+            type="password" 
+            name="contraseña" 
+            placeholder="Contraseña" 
+            id="subdomain" 
+            class="<%= locals.errors && errors.contraseña ? 'invalido' : null %>" 
+            >
+        <% if (locals.errors && errors.contraseña) { %>
+            <div class="texto-error">
+               <%= errors.contraseña.msg %>
+            </div>
+        <% } %>
         <br>
-        <input type="text" placeholder="Codigo de invitación" id="subdomain"/></input>
+        <input 
+            type="text" 
+            name="codigo" 
+            placeholder="Codigo de invitación" 
+            id="subdomain" 
+            class="<%= locals.errors && errors.codigo? 'invalido' : null %>"
+            value="<%= locals.oldData ? oldData.codigo : null %>"
+            >
+        <% if (locals.errors && errors.codigo) { %>
+            <div class="texto-error">
+               <%= errors.codigo.msg %>
+            </div>
+        <% } %>
+        <div>
+        <input type="file" name="avatar">
+        <% if (locals.errors && errors.avatar) { %>
+            <div class="texto-error">
+               <%= errors.avatar.msg %>
+            </div>
+        <% } %>
+        </div>
         <p style="text-align: end;"><a style="color:white;"href="#" >Solicitá tu código de invitación</a></p>
         <br>
         <button class="ingresar">Registrarse</button>
         <br>
         <button class="botonesExtra"></button>
-        <button class="botonesExtra"><a href='/users/editar'> Editar Usuario</a></button>
+        <button class="botonesExtra"></button>
         <br>
         <p>¿Ya estas registrado? <a href="/users/login" style="color:#b8b451">Ingresa</a></p>
         </form>

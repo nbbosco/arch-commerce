@@ -5,7 +5,7 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-Abbys-DesmondLo-SecPopulares.jpg",
         "precio": 2000,
-        "categoria": "Populares",
+        "categoria": "Animación",
         "fechaDeCreacion": "21-05-2019",
         "coleccionista": "",
         "creador": "DesmondLo",
@@ -18,7 +18,7 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-AMoment-MattEmmett-SecPrincipal-MasDelVendedor.jpg",
         "precio": 3000,
-        "categoria": "Principal",
+        "categoria": "3 D",
         "fechaDeCreacion": "05-11-2015",
         "coleccionista": "",
         "creador": "MattEmmet",
@@ -31,7 +31,7 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-Andromeda-Menossi-SecPopulares.jpg",
         "precio": 1000,
-        "categoria": "Populares",
+        "categoria": "Ilustración",
         "fechaDeCreacion": "30-06-2020",
         "coleccionista": "",
         "creador": "Menossi",
@@ -44,7 +44,7 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-Anxiety-Wbevaegelse-SecPopulares-MasDelVendedor.jpg",
         "precio": 5260,
-        "categoria": "Populares",
+        "categoria": "Abstracto",
         "fechaDeCreacion": "09-01-2013",
         "coleccionista": "",
         "creador": "Wbevaegelse",
@@ -57,11 +57,10 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-BauHaus-PeterTarka-SecCreadores.jpg",
         "precio": 3580,
-        "categoria": "Creadores",
-        "creador": "",
+        "categoria": "3 D",
         "fechaDeCreacion": "21-03-2020",
         "coleccionista": "",
-        "creadorpor": "PeterTarka",
+        "creador": "PeterTarka",
         "formato": "jpg",
         "coleccion": ""
     },
@@ -71,7 +70,7 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-CryptoPlace-Menossi-SecPopulares.jpg",
         "precio": 6250,
-        "categoria": "Populares",
+        "categoria": "Animación",
         "fechaDeCreacion": "04-11-2013",
         "coleccionista": "",
         "creador": "Menossi",
@@ -84,7 +83,7 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-CurtainHouse-CamilleCésarBoldt-Similares.jpg",
         "precio": 4300,
-        "categoria": "Similares",
+        "categoria":"3 D",
         "fechaDeCreacion": "30-11-2017",
         "coleccionista": "",
         "creador": "Camille César Boldt",
@@ -97,7 +96,7 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-DreamSceneNo.1-MrBuckley-SecPopulares.jpg",
         "precio": "2000",
-        "categoria": "Populares",
+        "categoria": "Ilustración",
         "fechaDeCreacion": "",
         "coleccionista": "",
         "creador": "MrBuckley",
@@ -110,7 +109,7 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-DreamSceneNo.3-MrBuckley-SecSecundaria.jpg",
         "precio": 3690,
-        "categoria": "Secundaria",
+        "categoria": "3 D",
         "fechaDeCreacion": "16-12-2020",
         "coleccionista": "",
         "creador": "MrBuckley",
@@ -123,7 +122,7 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-DreanSceneNo.2-MrBuckley-SecCreadores.jpg",
         "precio": 3690,
-        "categoria": "Creadores",
+        "categoria": "Ilustración",
         "fechaDeCreacion": "16-12-2020",
         "coleccionista": "",
         "creador": "MrBuckley",
@@ -136,7 +135,7 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-EmpireOfGravity-Menossi-SecPopulares.jpg",
         "precio": 7500,
-        "categoria": "Populares",
+        "categoria": "Animación",
         "fechaDeCreacion": "09-07-2019",
         "coleccionista": "",
         "creador": "Menossi",
@@ -149,7 +148,7 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-FortresHill-DesmondLo-SecSecundaria.jpg",
         "precio": 3200,
-        "categoria": "Secundaria",
+        "categoria": "3 D",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "DesmondLo",
@@ -162,7 +161,7 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-UniMiniFlat-RiccardoFornoni-MasDelCreador.jpg",
         "precio": 3200,
-        "categoria": "Secundaria",
+        "categoria": "Animación",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "RiccardoFornoni",
@@ -175,12 +174,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-Mid70s-RiccardoFornoni-MasDelCreador.jpg",
         "precio": 3200,
-        "categoria": "Creador",
+        "categoria": "Color",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "RiccardoFornoni",
         "formato": "jpg",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 15,
@@ -188,12 +187,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-IlVeliero-RiccardoFornoni-SecPopulares-MasDelCreador.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "3 D",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "RiccardoFornoni",
         "formato": "jpg",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 16,
@@ -201,12 +200,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-TheBirdBath-RiccardoFornoni-MasDelVendedor.jpg",
         "precio": 3200,
-        "categoria": "Mas del vendedor",
+        "categoria": "Color",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "RiccardoFornoni",
         "formato": "jpg",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 17,
@@ -214,12 +213,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-Interior&Reflections-FrancescoFlore-SecSecundaria.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Animación",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "Francesco Flore",
         "formato": "jpg",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 18,
@@ -227,12 +226,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-PurpleEvening-FrancescoFlore-SecPopulares-Similares.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Abstracto",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "FrancescoFlore",
         "formato": "jpg",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 19,
@@ -240,12 +239,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-LaVillaAuBordDeL'eau-CamilleCésarBoldt-SecPopulares.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Color",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "Camille César Boldt",
         "creador": "",
         "formato": "jpg",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 20,
@@ -253,12 +252,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-levitation-camilleCesarBoldt-SecCreadores.jpg",
         "precio": 3200,
-        "categoria": "Creadores",
+        "categoria": "Ilustración",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "Camille César Boldt",
         "formato": "jpg",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 21,
@@ -266,12 +265,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-Stairway-PeterTarka-SecPopulares-Similares.png",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Raro",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "",
         "formato": "png",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 22,
@@ -279,12 +278,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "vid-Lavish-JoAnieCharland-Similares.mp4",
         "precio": 3200,
-        "categoria": "Secundaria",
+        "categoria": "Animación",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 23,
@@ -292,12 +291,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-Islands-PeterTarka-SecPopulares.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "3 D",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 24,
@@ -305,12 +304,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-NovemberLights-FrancescoFlore-SecCreadores.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Ilustración",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 25,
@@ -318,12 +317,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-Ocean-Wbevaegelse-SecCreadores.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Animación",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 26,
@@ -331,12 +330,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-OrangeHaze-Menossi-SecPrincipal.jpg",
         "precio": 3200,
-        "categoria": "Principal",
+        "categoria": "Ilustración",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 27,
@@ -344,12 +343,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-ParisAndChill2-FlorentBoston-SecCreadores.jpg",
         "precio": 3200,
-        "categoria": "Creadores",
+        "categoria": "Animación",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 28,
@@ -357,12 +356,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-ParisAndChill3-FlorentBoston-SecCreadores.jpg",
         "precio": 3200,
-        "categoria": "Creadores",
+        "categoria": "Raro",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 29,
@@ -370,12 +369,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-ParisAndChill4-FlorentBoston-SecCreadores.jpg",
         "precio": 3200,
-        "categoria": "CreadoresFondo",
+        "categoria": "Color",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 30,
@@ -383,12 +382,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-ParisAndChill5-FlorentBoston-SecCreadores.jpg",
         "precio": 3200,
-        "categoria": "Principal",
+        "categoria": "Raro",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 31,
@@ -396,12 +395,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-PeachAndOranges-PeterTarka-SecPopulares.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Abstracto",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 32,
@@ -409,12 +408,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-Poolside-PeterTarka-SecPopulares.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Animación",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 33,
@@ -422,12 +421,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-Spiderland-BitErrror-SecPopulares.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Raro",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 34,
@@ -435,12 +434,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-SspIcc-DesmondLo-SecCreadores.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Color",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 35,
@@ -448,12 +447,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-TheCallToExplore-MattEmmett-SecPopulares.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Raro",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 36,
@@ -461,12 +460,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-TheFisherman-RiccardoFornoni-SecCreadores-Producto.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Abstracto",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 37,
@@ -474,12 +473,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-TheShadow-KennyFlatten-SecSecundaria.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Surreal",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 38,
@@ -487,12 +486,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-TheShadow(inColor)-KennyFlatten-SecPopulares.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Abstracto",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 39,
@@ -500,12 +499,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "img-Transcendence-KennyFlatten-SecPopulares.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Color",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 40,
@@ -513,12 +512,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "vid-CattelanHouse-Rek0de-SecSecundaria.mp4",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Surreal",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 41,
@@ -526,12 +525,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "vid-Discoid-JoAnieCharland-PagPrincipal-SecPrincipal.mp4",
         "precio": 3200,
-        "categoria": "Principal",
+        "categoria": "Ilustración",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 42,
@@ -539,12 +538,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "byTheSea_PeterTarka.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Abstracto",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 43,
@@ -552,12 +551,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "byTheSea_PeterTarka.png",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Surreal",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 44,
@@ -565,12 +564,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "camilleCésarBoldt2.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Ilustración",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 45,
@@ -578,12 +577,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "camilleCésarBoldt4.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Abstracto",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 46,
@@ -591,12 +590,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "gate_PeterTarka.png",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Surreal",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 47,
@@ -604,12 +603,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "kennyFlatten1.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Ilustración",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 48,
@@ -617,12 +616,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "lemons_PeterTarka.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Surreal",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 49,
@@ -630,12 +629,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "PeterTarka.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Ilustración",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 50,
@@ -643,12 +642,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "PeterTarka1.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Surreal",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 51,
@@ -656,12 +655,12 @@
         "descripcion": "La artista difumina la línea entre el arte 2D y 3D a través de una pintura corporal brillante. A lo largo de los años, su práctica ha perfeccionado un tipo de deliciosa ilusión que hace posible esta oscilación. ",
         "imagen": "tangetines_PeterTarka.jpg",
         "precio": 3200,
-        "categoria": "Populares",
+        "categoria": "Animación",
         "fechaDeCreacion": "14-09-2016",
         "coleccionista": "",
         "creador": "PeterTarka",
         "formato": "mp4",
-        "coleccion": ""
+        "coleccion": "" 
     },
     {
         "id": 52,

@@ -1,0 +1,128 @@
+body {
+    background-color: #0d435c;
+}
+main{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    color: white;
+}
+main h1 {
+    color: #b8b451;
+}
+main h2 {
+    color: #b8b451;
+    text-align: left;
+    margin: auto;
+    width: 90vw;
+    padding: 40px 20px 10px;
+}
+main h3 {
+    color: white;
+    margin: auto;
+}
+main p{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 12px
+}
+main a{
+    text-decoration: solid;
+}
+.portada{
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100vw;
+    height: 90vh;
+    border-radius: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.portada img {
+    width: 90vw;
+    border-radius: 20px;
+    margin: -500px 0 -700px 0;
+}
+
+.descripcion {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 90vw;
+}
+
+.descripcionIzq {
+    display: block;
+    width: 45vw;
+    border-radius: 10px;
+}
+.descripcionDer {
+    display: block;
+    width: 50%;
+    padding: 5%;
+    text-align: center;
+}
+.botonExtra {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #a6a597;
+    width: 50%;  
+    height: 20px;
+    margin: auto;
+}
+.botonPrincipal {
+    background-color: #b8b451;
+    width: 80%;
+    color: white;
+    margin-bottom: 10px;
+}
+.fa-user-circle {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.masDelCreador {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90vw;
+}
+.masDelCreador a img{
+    width: 30%;
+    border-radius: 10px;
+}
+.masDelVendedor {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90vw;
+}
+.masDelVendedor img{
+    width: 30%;
+    border-radius: 10px;
+}
+
+.similares {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90vw;
+    margin-bottom: 40px;
+}
+.similares img, video{
+    width: 20%;
+    border-radius: 10px;
+}
+
+.centro {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    width: 500px;
+}
