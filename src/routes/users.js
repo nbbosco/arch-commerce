@@ -8,7 +8,7 @@ const path = require('path');
 // const uploadFile = require('../middlewares/multerMiddleware');
 // const validations = require('../middlewares/validateRegisterMiddleware.js');
 const guestMiddleware = require('../middlewares/guestMiddleware');
-const authMiddleware = require('../middlewares/guestMiddleware');
+// const authMiddleware = require('../middlewares/guestMiddleware');
 
 const storage = multer.diskStorage({
 	destination: (req, file, cb) => {
