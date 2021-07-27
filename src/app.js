@@ -2,6 +2,7 @@
 const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
 const express = require('express');
+const session = require('express-session');
 const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override');
@@ -16,6 +17,13 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(cookieParser());
 app.use(methodOverride('_method'));
+app.use(session({
+    secret: "Shhh, It's a secret",
+    resave: false,
+    saveUninitialized: false,
+}));
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
+app.use(userLoggedMiddleware);
 
 // ************ Template Engine ************
 app.set ('view engine', 'ejs');

@@ -7,6 +7,8 @@ const path = require('path');
 
 // const uploadFile = require('../middlewares/multerMiddleware');
 // const validations = require('../middlewares/validateRegisterMiddleware.js');
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/guestMiddleware');
 
 const storage = multer.diskStorage({
 	destination: (req, file, cb) => {
@@ -46,12 +48,14 @@ validations = [
     }),
 ]
 
-router.get('/login',userController.login);
+router.get('/login', guestMiddleware, userController.login);
 router.post('/login',userController.loginProcess);
-router.get('/registro',userController.registro);
+router.get('/registro', guestMiddleware, userController.registro);
 router.post('/registro', uploadFile.single('avatar'), validations, userController.processRegister);
 router.get ('/:id/editar', userController.editar);
 router.put ('/:id/editar', userController.update);
 router.get('/profile', userController.profile);
+router.get('/logout', userController.logout);
+
 
 module.exports = router;

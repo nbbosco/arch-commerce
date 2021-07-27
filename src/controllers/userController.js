@@ -18,7 +18,13 @@ const userController = {
         if(userToLogin){
             let comparePassword = bcryptjs.compareSync(req.body.contraseña, userToLogin.contraseña);
             if (comparePassword) {
-                return res.send('Ok puedes ingresar')
+                delete userToLogin.contraseña;
+                req.session.userLogged = userToLogin;
+
+                if(req.body.remember_user) {
+                    res.cookie('userEmail', req.body.email, {maxAge: (1000*60)*2})
+                }
+                return res.redirect('/users/profile')
             }
         }
 
@@ -31,9 +37,17 @@ const userController = {
         });
     },
     profile: (req, res) => {
-        res.render('./users/profile')
+        return res.render('./users/profile',{
+            user: req.session.userLogged
+        });
+    },
+    logout: (req, res) => {
+        res.clearCookie('userEmail');
+        req.session.destroy();
+        return res.redirect('/')
     },
     registro: (req, res) => {
+        res.cookie('testing', 'Hola mundo!', {maxAge: 1000 * 30})
         res.render('./users/registro')
     },
     processRegister: (req, res) => {
