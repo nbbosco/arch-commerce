@@ -68,13 +68,9 @@ main input{
     font-family: 'Playfair Display', serif;
     width: 80%;
     color: white;
-    margin-bottom: 5%;
-    margin-top: 5%;
     padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
+    display: block;
+    margin: 5% 10% 0% 10%;
     
 }
 
@@ -106,6 +102,17 @@ main input{
     font-size: 12px;
 }
 
+.recordar {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row-reverse;
+    width: 60%;
+    height: 0%;
+    font-size: 12px;
+    color: white;
+}
 
 /* === MEDIA QUERIES === */
 
