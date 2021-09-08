@@ -39,11 +39,11 @@ function ventasData(sequelize, Datatypes){
     
     ventas.associate = function (modelos){
     
-        ventas.hasMany(models.Producto, {
+        ventas.belongsTo(models.Producto, {
             as: 'productos',
             foreignKey: 'FKproducto'
       }),
-      ventas.hasMany(models.Usuario, {
+      ventas.belongsTo(models.Usuario, {
           as: 'usuarios',
           foreignKey: 'FKusuario'
       })

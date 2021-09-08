@@ -47,7 +47,7 @@ const Usuario = sequelize.define(alias, cols, config);
 
 Usuario.associate = (models) => {
 
-    Usuario.belongToMany(models.Producto, {
+    Usuario.belongsTo(models.Producto, {
         as: 'productos',
         foreignKey: 'FKcreador'
     })
