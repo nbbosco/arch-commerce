@@ -7,13 +7,36 @@ module.exports = function(sequelize, DataTypes) {
             autoIncrement: true,
             allowNull: false
         },
-        email: {
-            type: DataTypes.STRING(100),
+        nombre : {
+            type : DataTypes.STRING(255),
             allowNull: false
         },
-        password: {
-            type: DataTypes.STRING(100),
+        apellido : {
+            type : DataTypes.STRING(255),
             allowNull: false
+        },
+        email: {
+            type: DataTypes.STRING(255),
+            allowNull: false
+        },
+        contraseña: {
+            type: DataTypes.STRING(255),
+            allowNull: false
+        },
+        fecha_nacimiento : {
+            type : DataTypes.DATE
+        },
+        avatar : {
+            type : DataTypes.STRING(255)
+        },
+        billetera : {
+            type : DataTypes.STRING(100)
+        },
+        creador : {
+            type : DataTypes.INTEGER
+        },
+        fecha_inscripcion : {
+            type : DataTypes.DATE
         }
     }
     const config = {
@@ -22,11 +45,11 @@ module.exports = function(sequelize, DataTypes) {
 }
 const Usuario = sequelize.define(alias, cols, config);
 
-Uauario.associate = (models) => {
+Usuario.associate = (models) => {
 
-    Usuario.hasMany(models.Nota, {
-        as: 'notas',
-        foreignKey: 'usuario_FK'
+    Usuario.belongsTo(models.Producto, {
+        as: 'productos',
+        foreignKey: 'FKcreador'
     })
 }
 
