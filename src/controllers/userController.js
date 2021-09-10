@@ -88,13 +88,7 @@ const userController = {
         res.redirect('/');
     },
     editar: (req, res) => {
-        let idUsuario= req.params.id
-		for(let i=0;i<users.length;i++){
-			if (users[i].id==idUsuario){
-				var usuarioEncontrado = users[i];
-			}
-		}
-        res.render('./users/editar', {editar: usuarioEncontrado})
+        res.render('./users/editar', {user: req.session.userLogged})
     },
     update: (req, res) => {
 		let valoresNuevos = req.body;

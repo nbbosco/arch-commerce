@@ -12,6 +12,7 @@ window.addEventListener("load", function(){
         descripcion.innerText = 'Conviérte en coleccionista y empieza a construir tu galeria de arte digital'
         codigo.style.display='none'
         solicitarCodigo.style.display='none'
+        codigo.value='none'
     }else{
             titulo.innerText = 'Creador'
             descripcion.innerText = 'Conviértete en creador y empieza a vender tus diseños digitales'

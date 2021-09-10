@@ -26,6 +26,7 @@
         <div class="descripcionDer">
             <h1>Hola, <%= user.nombre %></h1>
             <h3><i class="fas fa-user-circle"></i><%= user.email %></h3>
+            <p><a href="/users/<%= user.id %>/editar" style="color:#b8b451">Editar perfil</a></p>
             <p><a href="/users/logout" style="color:#b8b451">Logout</a></p>
         </div>
     </div>
