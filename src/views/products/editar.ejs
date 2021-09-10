@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/header-footer.css">
     <link rel="stylesheet" href="/css/styles-formulario.css">
 
@@ -17,12 +16,11 @@
 <body>
     <!-- header -->
     <%- include('../partials/header') %>
-    <!-- <br>
-    <div class="control-formulario">
-        <h3>Producto a Editar (id)</h3>
-        <a href="/products/input type="text" name="id" id="id" placeholder="<%=productoEnDetalle.id%>" class="control" required>
-    </div> -->
-
+    
+    <div class ='errores'>
+        <ul>
+        </ul>
+    </div>
      <form action="/products/<%= productoEnDetalle.id%>?_method=PUT/edit" method="POST" class="formulario">
         <br>
         <div class="control-formulario">
@@ -91,6 +89,8 @@
         <button type="submit" class="boton-formulario">Editar</button>
         <button type="reset" class="boton-formulario">Borrar</button>
     </form>
+    <script src='/js/validacionesEditarProducto.js'></script>
+
     <!-- footer -->
     <%- include('../partials/footer') %>
     

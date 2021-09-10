@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/header-footer.css">
     <link rel="stylesheet" href="/css/styles-carrito.css">
 </head>
@@ -36,15 +35,16 @@
         <div class="tabla">
             <table cellpadding="10px">
                 <tr>
-                    <td><%= productos[i].nombreProducto%></td>
-                    <td><%= productos[i].precio%>ETH</td>
-                    <td><%= productos[i].fechaDeCreacion%></td>
-                    <td>$30.000</td>
+                    <td id="nombre"></td>
+                    <td id="precio"></td>
+                    <td id="fecha"></td>
+                    <td></td>
                 </tr>
             </table>
             <% } %>
         </div>
         <br>
+        <script src='/js/carrito.js'></script>
     </main>
 
     <!-- footer -->

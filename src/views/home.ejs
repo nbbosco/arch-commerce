@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles-home.css">
 </head>
 
@@ -17,16 +16,17 @@
     <header>
         <div class="menu">
         <% if (!locals.isLogged) { %>
-            <a href="/users/registro"><i class="fas fa-heart"></i></a>
+            <a href="/users/registro"><i class="fas fa-heart" id='registro'></i></a>
             <% } %>
-            <a href="/products"><i class="fas fa-fire"></i></a>
-            <a href="/"><i class="logo">Logo</i></a>
-            <a href="/users/login"><i class="fas fa-user"></i></a>
-            <a href="/products/carrito"><i class="fas fa-cart-plus"></i></a>
+            <a href="/products"><i class="fas fa-fire" id='producto'></i></a>
+            <a href="/"><img src="/img/Logo.png"></a>
+            <a href="/users/login"><i class="fas fa-user" id='usuario'></i></a>
+            <a href="/products/carrito"><i class="fas fa-cart-plus" id='carrito'></i></a>
         </div>
         <div class="caratula">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus perferendis porro libero dolorum quia possimus! A, illo repellat saepe sequi est iusto laudantium, deleniti dolores dignissimos error nemo sit pariatur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias nobis vero maiores nulla velit enim aut, aliquid asperiores praesentium quidem aspernatur impedit cumque minus tempore id, excepturi eius dolorum mollitia?</p>
     </div>
+    <script src='/js/header.js'></script>
     <div class="buscadores">
         <div class="buscador1">
         <h4>Buscador</h4>

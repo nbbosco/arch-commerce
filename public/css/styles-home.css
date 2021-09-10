@@ -28,11 +28,11 @@ header a{
     font-size: 24px;
     margin: auto;
 }
-.logo{
-    color: white;
-    background-color: black;
-    font-weight: normal;
-    font-style: normal;
+.menu img{
+    display: block;
+    justify-content: space-between;
+    margin: auto;
+    width: 5vw;
 }
 .caratula {
     display: flex;

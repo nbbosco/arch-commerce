@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/header-footer.css">
     <link rel="stylesheet" href="/css/styles-producto.css">
 
@@ -28,7 +27,7 @@
                 <h3><i class="fas fa-user-circle"></i><%=productoEnDetalle.creador%></h3>
                 <h3><i class="fas fa-user-circle"></i><%=productoEnDetalle.coleccionista%></h3>
                 <p><%=productoEnDetalle.descripcion%></p>
-                <p><%=productoEnDetalle.fechaDeCreacion%></p>
+                <p id='fecha'><%=productoEnDetalle.fechaDeCreacion%></p>
                 <p><%=productoEnDetalle.categoria%></p>
                 <a href="/products/<%= productoEnDetalle.id %>/edit"><button class="botonExtra">Editar</button></a>
                 <form action="/products/<%= productoEnDetalle.id%>?_method=DELETE" method="POST" onsubmit="return confirm('¿Estas seguro que queres borrar <%=productoEnDetalle.nombreProducto%>?')">
@@ -39,7 +38,7 @@
                 </a>
                 <br>
                 <br>
-                <p>Mayor oferta: <i style="font-weight:bold">$<%=productoEnDetalle.precio%></i><a href="#"><i style="color:orangered"> Ver ofertas recientes</i></p></a>
+                <p>Mayor oferta: <i style="font-weight:bold" id='precio'>$<%=productoEnDetalle.precio%></i><a href="#"><i style="color:orangered"> Ver ofertas recientes</i></p></a>
             </div>
         </div>
         <h2>Más del creador</h2>
@@ -75,6 +74,7 @@
                 <source src="/img/products/vid-Lavish-JoAnieCharland-Similares.mp4" type="video/mp4">
             </video>
         </div>
+        <script src='/js/producto.js'></script>
     </main>
 
     <!-- footer -->

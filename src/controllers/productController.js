@@ -86,6 +86,7 @@ const productController = {
 			fs.writeFileSync(productsFilePath, JSON.stringify(products,null,4));
 			fs.unlinkSync(path.join(__dirname,'../../public/img/products/' + nombreImagen));
 			res.render('home', {productos: products});
+			res.redirect('/');
 		},
 
     carrito: (req, res) => {

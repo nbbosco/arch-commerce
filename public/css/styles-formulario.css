@@ -52,3 +52,13 @@ body {
     margin-bottom: 20px;
     transition: all 450ms;
 }
+
+.errores{
+    background: #c51244 !important;
+    padding: 10px !important;
+    border-radius: 90 !important;
+    position: relative; 
+    display: none;
+    box-shadow: 1px 1px 1px #aaaaaa;
+    width: 97%
+}
