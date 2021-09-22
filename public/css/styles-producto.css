@@ -126,7 +126,7 @@ main a{
     padding-top: 50px;
     width: 500px;
 }
-.sec-populares img {
+.sec-populares img, embed {
     width: 15vw;
     height: 150px;
     object-fit: cover;
@@ -142,6 +142,8 @@ main a{
     margin-bottom: 20px;
     border-radius: 10px;
  }
+
+
 
 
 

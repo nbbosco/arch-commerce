@@ -24,24 +24,15 @@
             <h5>Pujas</h5>
             <a href="#"><i class="fas fa-wallet"></i></a>
         </div>
-
-        <div class="titulares2">
-            <p>Creación</p>
-            <p>Precio</p>
-            <p>Fecha</p>
-            <p>Billetera</p>
-        </div>
-        <% for(let i=0; i<9;i++) { %>
+        
         <div class="tabla">
-            <table cellpadding="10px">
-                <tr>
-                    <td id="nombre"></td>
-                    <td id="precio"></td>
-                    <td id="fecha"></td>
-                    <td></td>
+            <table id="tabla" cellpadding="10px">
+                <tr class="titulares2">
+                    <th>Creación</th>
+                    <th>Precio</th>
+                    <th>Fecha</th>
                 </tr>
             </table>
-            <% } %>
         </div>
         <br>
         <script src='/js/carrito.js'></script>

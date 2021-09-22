@@ -1,15 +1,14 @@
 window.addEventListener("load", function(){
 let d = localStorage.getItem('datosCarrito')
-console.log(d)
+console.log(JSON.parse(d))
+let dP = JSON.parse(d)
 
-// nombreTabla = document.querySelector('#nombre');
-// nombreTabla.innerHTML = JSON.parse(d).nombre;
+let tabla = document.getElementById('tabla')
 
-// precioTabla = document.querySelector('#precio');
-// precioTabla.innerHTML = JSON.parse(d).precio + ' ETH';
-
-// fechaTabla = document.querySelector('#fecha');
-// fechaTabla.innerHTML = JSON.parse(d).fecha;
+for (i = 0; i<dP.length; i++) {
+tabla.innerHTML += '<tr><td>' + dP[i].nombre + '</td><td>' + dP[i].precio + ' ETH' +'</td><td>' + dP[i].fecha + '</td></tr>'
 
 console.log(d)
+}
 })
+    
