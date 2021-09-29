@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles-home.css">
 </head>
 
@@ -17,17 +16,18 @@
     <header>
         <div class="menu">
         <% if (!locals.isLogged) { %>
-            <a href="/users/registro"><i class="fas fa-heart"></i></a>
+            <a href="/users/registro"><i class="fas fa-heart" id='registro'></i></a>
             <% } %>
-            <a href="/products"><i class="fas fa-fire"></i></a>
-            <a href="/"><i class="logo">Logo</i></a>
-            <a href="/users/login"><i class="fas fa-user"></i></a>
-            <a href="/products/carrito"><i class="fas fa-cart-plus"></i></a>
+            <a href="/products"><i class="fas fa-fire" id='producto'></i></a>
+            <a href="/"><img src="/img/Logo.png"></a>
+            <a href="/users/login"><i class="fas fa-user" id='usuario'></i></a>
+            <a href="/products/carrito"><i class="fas fa-cart-plus" id='carrito'></i></a>
         </div>
         <div class="caratula">
         <p>¿Como definimos el arte? Es una idea ambigua, con parametros relativos, lo que es arte para uno tal vez no lo es para otro. ¿Hace falta que tenga reconocimiento, que este expuesto en un museo, con un precio alto para que sea conciderado como tal? ¿Cuantas formas hay de crearlo?
             Proponemos un espacio abierto que de lugar al intercambio de creaciones entre artistas y/o entusiastas. Estas son de origen digital, lo que nos abre una infinidad de puertas y variaciones dentro del mundo artistico. Se podrán encontrar con situaciones realistas, asi como con otras irreales, com modelos en 3D, con videos, gifs y mucho más.</p>
     </div>
+    <script src='/js/header.js'></script>
     <div class="buscadores">
         <div class="buscador1">
         <h4>Buscador</h4>

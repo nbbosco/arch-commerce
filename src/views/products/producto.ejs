@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/header-footer.css">
     <link rel="stylesheet" href="/css/styles-producto.css">
 
@@ -19,15 +18,13 @@
     <%- include('../partials/header') %>
 
     <main>
-        <div class="centro">
         <a href="/products/create">
-            <button class="botonPrincipal">Vender tus creaciones</button>
+            <button class="botonVender">Vender tus creaciones</button>
         </a>
-        </div>
         <% for(let i=0; i<productos.length;i++) { %>
-        <div class="portada">
+        <div class="sec-populares">
             <a href="/products/<%=productos[i].id %>">
-            <img src="/img/products/<%=productos[i].imagen%>">
+            <embed volume='0' src="/img/products/<%=productos[i].imagen%>">
             </a>
         </div>
         <% } %>

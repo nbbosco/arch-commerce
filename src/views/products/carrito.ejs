@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/header-footer.css">
     <link rel="stylesheet" href="/css/styles-carrito.css">
 </head>
@@ -25,26 +24,18 @@
             <h5>Pujas</h5>
             <a href="#"><i class="fas fa-wallet"></i></a>
         </div>
-
-        <div class="titulares2">
-            <p>Creación</p>
-            <p>Precio</p>
-            <p>Fecha</p>
-            <p>Billetera</p>
-        </div>
-        <% for(let i=0; i<9;i++) { %>
+        
         <div class="tabla">
-            <table cellpadding="10px">
-                <tr>
-                    <td><%= productos[i].nombreProducto%></td>
-                    <td><%= productos[i].precio%>ETH</td>
-                    <td><%= productos[i].fechaDeCreacion%></td>
-                    <td>$30.000</td>
+            <table id="tabla" cellpadding="10px">
+                <tr class="titulares2">
+                    <th>Creación</th>
+                    <th>Precio</th>
+                    <th>Fecha</th>
                 </tr>
             </table>
-            <% } %>
         </div>
         <br>
+        <script src='/js/carrito.js'></script>
     </main>
 
     <!-- footer -->

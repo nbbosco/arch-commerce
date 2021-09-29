@@ -9,15 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/header-footer.css">
     <link rel="stylesheet" href="/css/styles-formulario.css">
-
 </head>
 <body>
     <!-- header -->
     <%- include('../partials/header') %>
-
+    
+    <div class ='errores'>
+        <ul>
+        </ul>
+    </div>
      <form action="/products/create" method="POST" enctype="multipart/form-data" class="formulario">
         <br>
         <div class="control-formulario">
@@ -26,20 +28,20 @@
             <label class="radio"><input type="radio" name="perfil" id="perfil" value="Vendedor"></input>Vendedor</label>
         </div>
         <div class="control-formulario">
-            <input type="text" name="creador" id="creador" placeholder="Nombre del creador" class="control" required>
+            <input type="text" name="creador" id="creador" placeholder="Nombre del creador" class="control">
         </div>
         <div class="control-formulario">
-            <input type="text" name="coleccionista" id="coleccionista" placeholder="Nombre del vendedor / coleccionista" class="control" required>
+            <input type="text" name="coleccionista" id="coleccionista" placeholder="Nombre del vendedor / coleccionista" class="control">
         </div>
         <div class="control-formulario">
             <h3>Sobre el producto</h3>
             <p>Fecha de creacion</p>
             <input type="date" name="fechaDeCreacion" id="fechaDeCreacion" min='1900-01-01' max="2010-01-01" class="control">
             <p>Precio base de la subasta</p>
-            <input type="number" name="precio" id="precio" placeholder="Valor en ETH" class="control" required>
+            <input type="number" name="precio" id="precio" placeholder="Valor en ETH" class="control">
         </div>
         <div class="control-formulario">
-            <input type="text" name="nombreProducto" id="nombreProducto" placeholder="Nombre del producto" minlength="3" class="control" required>
+            <input type="text" name="nombreProducto" id="nombreProducto" placeholder="Nombre del producto" minlength="3" class="control">
         </div>
         <div class="control-formulario">
             <input type="text" name="coleccion" id="coleccion" placeholder="Colección (opcional)" minlength="3" class="control">
@@ -71,16 +73,14 @@
             <input type="file" name="imagen" id="imagen" accept="image/*" class="control"></input> 
             <p>Archivo original del producto</p>
             <input type="file" name="productoOriginal" id="productoOriginal" accept="video/*" class="control"></input>
-            <p>Formato</p>
-            <label class="radio"><input type="radio" name="formato" id="formato" value="jpg"></input>Imagen</label>
-            <label class="radio"><input type="radio" name="formato" id="formato" value="mp4"></input>Video</label>
-            <label class="radio"><input type="radio" name="formato" id="formato" value="3d"></input>Modelo</label>
         </div>
         <button type="submit" class="boton-formulario">Crear</button>
         <button type="reset" class="boton-formulario">Borrar</button>
     </form>
+    <script src='/js/validacionesCrearProducto.js'></script>
+
     <!-- footer -->
     <%- include('../partials/footer') %>
-    
+
 </body>
 </html>

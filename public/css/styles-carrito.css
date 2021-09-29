@@ -22,10 +22,6 @@ body {
 }
 
 .titulares2 {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around;
-    align-items: center;
     font-family: 'Playfair Display', serif;
     font-size: 18px;
     color: #b8b451;

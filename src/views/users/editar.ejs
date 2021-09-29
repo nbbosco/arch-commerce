@@ -10,38 +10,37 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/header-footer.css">
         <link rel="stylesheet" href="/css/styles-formulario.css">
     </head>
     <body>
         <!-- header -->
         <%- include('../partials/header') %>
+
+        <div class ='errores'>
+            <ul>
+            </ul>
+        </div>
         <main>
-            <form action='/users/<%= editar.id%>?_method=PUT/edit' method='POST' class='formulario'>
+            <form action='/users/<%= user.id%>?_method=PUT/edit' method='POST' class='formulario'>
                 <div class='control-formulario'>
-                    <h3>Nombre y apellido</h3>
-                    <div class='control-formulario'>
-                        <input type='text' name='nombre' id='nombre' value='nombre' placeholder='<%=editar.nombre%>'>
-                    </div>
-                    <div class='control-formulario'>
-                        <input type='text' name='apellido' id='apellido' value='apellido' placeholder='<%=editar.apellido%>'>
-                    </div>
+                    <h3>Nombre completo</h3>
+                    <input type='text' name='nombre' id='nombre' placeholder='<%=user.nombre%>'>
                 </div>
                 <div class='control-formulario'>
-                    <input type='email' name='email' id='email' value='email' placeholder='<%=editar.email%>'>
+                    <input type='email' name='email' id='email' placeholder='<%=user.email%>'>
                 </div>
                 <div class='control-formulario'>
                     <h3>Número de telefono</h3>
-                    <input type='tel' name='telefono' id='telefono' value='telefono' placeholder='<%=editar.telefono%>'>
+                    <input type='tel' name='telefono' id='telefono' placeholder='<%=user.telefono%>'>
                 </div>
                 <div class='control-formulario'>
                     <h3>Fecha de nacimiento</h3>
-                    <input type='date' name='fehcaNacimiento' id='fehcaNacimiento' value='fecha' placeholder='<%=editar.fechaNacimiento%>'>
+                    <input type='date' name='fehcaNacimiento' id='fehcaNacimiento' placeholder='<%=user.fechaNacimiento%>'>
                 </div>
                 <div class='control-formulario'>
                     <h3>Foto de perfil</h3>
-                    <input type='file' name='fotoPerfil' id='fotoPerfil' value='foto' placeholder='<%=editar.fotoPerfil%>' accept=".jpg, .jpeg, .png">
+                    <input type='file' name='fotoPerfil' id='fotoPerfil' placeholder='<%=user.fotoPerfil%>' accept=".jpg, .jpeg, .png">
                 </div>
                 <div class='control-formulario'>
                     <h3>Tipo de perfil</h3>
@@ -52,6 +51,7 @@
                 <button type="reset" class="boton-formulario">Borrar</button>
 
             </form>
+            <script src='/js/validacionesEditarRegistro.js'></script>
         </main>
         <!-- footer -->
         <%- include('../partials/footer') %>

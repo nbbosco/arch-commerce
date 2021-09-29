@@ -126,6 +126,24 @@ main a{
     padding-top: 50px;
     width: 500px;
 }
+.sec-populares img, embed {
+    width: 15vw;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px;
+ }
+ .botonVender {
+    background-color: #b8b451;
+    color: white;
+    width: 15vw;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px;
+ }
+
+
 
 
 

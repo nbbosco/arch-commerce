@@ -10,7 +10,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles-registro.css">
     <link rel="stylesheet" href="/css/header-footer.css">
 </head>
@@ -18,31 +17,15 @@
     <!-- header -->
     <%- include('../partials/header') %>
 
+    <div class ='errores'>
+        <ul>
+        </ul>
+    </div>
     <main>
         <form action="/users/registro" method="POST" enctype="multipart/form-data">
-        <h1>Coleccionista</h1>
-        <p>Conviérte en coleccionista y empieza a construir tu galeria de arte digital</p>
-        <p>-Inhabilitado temporalmente-</p>
-        <br>
-        <input type="text" name="nombre" placeholder="Nombre (será visto públicamente)" id="subdomain"/></input>
-        <br>
-        <input type="email" name="email" placeholder="Correo electrónico" id="subdomain"/></input>
-        <br>
-        <input type="password" name="contraseña" placeholder="Contraseña" id="subdomain"/></input>
-        <br>
-        <input type="file" name="avatar">
-        <br>
-        <br>
-        <button class="ingresar">Registrarse</button>
-        <br>
-        <!-- <button class="botonesExtra"></button>
-        <button class="botonesExtra"></button> -->
-        <br>
-        <p>¿Ya estas registrado? <a href="/users/login" style="color:#b8b451">Ingresa</a></p>
-        </form>
-        <form action="/users/registro" method="POST" enctype="multipart/form-data">
         <h1>Creador</h1>
-        <p>Conviértete en creador y empieza a vender tus diseños digitales</p>
+        <p id='descripcion'>Conviértete en creador y empieza a vender tus diseños digitales</p>
+        <p>-Click en titulo para cambiar de tipo de perfil-</p>
         <br>
         <input 
             type="text" 
@@ -89,7 +72,7 @@
             type="text" 
             name="codigo" 
             placeholder="Codigo de invitación" 
-            id="subdomain" 
+            id="codigo" 
             class="<%= locals.errors && errors.codigo? 'invalido' : null %>"
             value="<%= locals.oldData ? oldData.codigo : null %>"
             >
@@ -106,7 +89,7 @@
             </div>
         <% } %>
         </div>
-        <p style="text-align: end;"><a style="color:white;"href="#" >Solicitá tu código de invitación</a></p>
+        <p style="text-align: end;" id='solicitarCodigo'><a style="color:white;"href="#" >Solicitá tu código de invitación</a></p>
         <br>
         <button class="ingresar">Registrarse</button>
         <br>
@@ -115,6 +98,7 @@
         <br>
         <p>¿Ya estas registrado? <a href="/users/login" style="color:#b8b451">Ingresa</a></p>
         </form>
+        <script src='/js/validacionesRegistro.js'></script>
     </main>
 
      <!-- footer -->
