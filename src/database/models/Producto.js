@@ -1,46 +1,46 @@
-function productosData(sequelize, Datatypes){
+function productosData(sequelize, dataTypes){
 
-    alias = 'productos';
+    alias = 'Productos';
     
     cols = {
       id: {
-        type: Datatypes.INTEGER, 
+        type: dataTypes.INTEGER, 
         primaryKey: true, 
         autoIncrement: true,
         allowNull: false
       },
       nombre: {
-        type: Datatypes.STRING(255),
+        type: dataTypes.STRING(255),
         allowNull: false
       },
       descripcion : {
-        type: Datatypes.STRING(255)
+        type: dataTypes.STRING(255)
       },
       imagen : {
-        type: Datatypes.STRING(255),
+        type: dataTypes.STRING(255),
         allowNull: false
       },
       precio : {
-          type: Datatypes.INTEGER,
+          type: dataTypes.INTEGER,
           allowNull: false
       },
       FKseccion : {
-          type: Datatypes.INTEGER,
+          type: dataTypes.INTEGER,
           allowNull: false
       },
       FKcategoria : {
-          type: Datatypes.INTEGER,
+          type: dataTypes.INTEGER,
           allowNull: false
       },
       fecha_de_creacion : {
-          type: Datatypes.DATE
+          type: dataTypes.DATE
       },
       FKcreador : {
-          type: Datatypes.INTEGER,
+          type: dataTypes.INTEGER,
           allowNull: false
       },
       FKformato : {
-          type: Datatypes.INTEGER
+          type: dataTypes.INTEGER
       }
     }
     
@@ -48,7 +48,7 @@ function productosData(sequelize, Datatypes){
     
     const productos = sequelize.define(alias,cols,config)
     
-    productos.associate = function (modelos){
+    productos.associate = function (models){
 
         productos.hasMany(models.Seccion,{
             as : 'secciones',
@@ -62,7 +62,7 @@ function productosData(sequelize, Datatypes){
             as : 'usuarios',
             foreignKey: 'FKcreadores'
         }),
-        productos.hasMany(models.Formatos, {
+        productos.hasMany(models.Formato, {
             as : 'formatos',
             foreignKey: 'FKformato'
         })

@@ -1,10 +1,11 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": cambiar,
-    "database": "notas_db",
+    "password": 'Xinomeno0',
+    "database": "arch_commerce",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port": 3306
   },
   "test": {
     "username": "root",

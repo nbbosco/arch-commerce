@@ -1,34 +1,34 @@
-function ventasData(sequelize, Datatypes){
+function ventasData(sequelize, dataTypes){
 
-    alias = 'venta';
+    alias = 'Venta';
     
     cols = {
       id: {
-        type: Datatypes.INTEGER, 
+        type: dataTypes.INTEGER, 
         primaryKey: true, 
         autoIncrement: true,
         allowNull: false
       },
       cantidad : {
-          type: Datatypes.INTEGER
+          type: dataTypes.INTEGER
       },
       numero_factura : {
-        type: Datatypes.INTEGER
+        type: dataTypes.INTEGER
       },
       fecha : {
-          type: Datatypes.DATE
+          type: dataTypes.DATE
       },
       vendido : {
-          type: Datatypes.INTEGER
+          type: dataTypes.INTEGER
       },
       FKproducto : {
-          type: Datatypes.INTEGER
+          type: dataTypes.INTEGER
       },
       precio : {
-          type: Datatypes.INTEGER
+          type: dataTypes.INTEGER
       },
       FKusuario : {
-          type: Datatypes.INTEGER
+          type: dataTypes.INTEGER
       }
 
       }
@@ -37,9 +37,9 @@ function ventasData(sequelize, Datatypes){
     
     const ventas = sequelize.define(alias,cols,config)
     
-    ventas.associate = function (modelos){
+    ventas.associate = function (models){
     
-        ventas.belongsTo(models.Producto, {
+        ventas.belongsTo(models.Productos, {
             as: 'productos',
             foreignKey: 'FKproducto'
       }),

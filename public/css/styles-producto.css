@@ -59,6 +59,7 @@ main a{
     display: block;
     width: 45vw;
     border-radius: 10px;
+    margin-top: 20px
 }
 .descripcionDer {
     display: block;
@@ -71,15 +72,18 @@ main a{
     justify-content: center;
     text-align: center;
     background-color: #a6a597;
-    width: 50%;  
+    width: 20%;  
     height: 20px;
     margin: auto;
+    border-radius: 20px;
 }
 .botonPrincipal {
     background-color: #b8b451;
-    width: 80%;
+    height: 50px;
+    width: 50%;
     color: white;
-    margin-bottom: 10px;
+    margin: 10px;
+    border-radius: 20px;
 }
 .fa-user-circle {
     font-size: 20px;
@@ -92,8 +96,8 @@ main a{
     margin: auto;
     width: 90vw;
 }
-.masDelCreador a img{
-    width: 30%;
+.masDelCreador embed{
+    width: 620px;
     border-radius: 10px;
 }
 .masDelVendedor {
@@ -102,8 +106,8 @@ main a{
     margin: auto;
     width: 90vw;
 }
-.masDelVendedor img{
-    width: 30%;
+.masDelVendedor embed{
+    width: 400px;
     border-radius: 10px;
 }
 
@@ -114,8 +118,8 @@ main a{
     width: 90vw;
     margin-bottom: 40px;
 }
-.similares img, video{
-    width: 20%;
+.similares embed{
+    width: 220px;
     border-radius: 10px;
 }
 

@@ -6,8 +6,7 @@ const { validationResult } = require('express-validator');
 const usersFilePath = path.join(__dirname, '../database/userDatabase.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
-const User = require('../models/user.js')
-const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+const User = require('../user.js')
 
 const userController = {
     login: (req, res) => {

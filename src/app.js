@@ -33,10 +33,12 @@ app.set('views', path.join(__dirname, '/views'));
 const mainRoutes = require('./routes/main');
 const productsRoutes = require('./routes/products');
 const usersRoutes = require('./routes/users');
+const apiRoutes = require('./routes/api');
 
 app.use('/', mainRoutes);
 app.use('/products', productsRoutes);
 app.use('/users', usersRoutes);
+app.use('/api', apiRoutes);
 
 // ************ Visualizar ************
 app.listen((process.env.PORT || 3000), function() {

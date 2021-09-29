@@ -43,36 +43,40 @@
         </div>
         <h2>Más del creador</h2>
         <div class="masDelCreador">
+        <% const cant = []%>
         <% for(let i=0; i<productos.length;i++){ %>
-        <%    if (productos[i].creador==productoEnDetalle.creador){%>
-            <a class="masDelCreador" href="/products/<%=productos[i].id %>">
-            <img src="/img/products/<%=productos[i].imagen%>">
+        <%    if (productos[i].nombreProducto != productoEnDetalle.nombreProducto && productos[i].creador==productoEnDetalle.creador && cant.length < 2){%>
+            <% cant.push(i) %>
+            <a href="/products/<%=productos[i].id %>">
+            <embed src="/img/products/<%=productos[i].imagen%>">
             </a>
             <% } %>
             <% }%>
         </div>
         <h2>Más del vendedor</h2>
         <div class="masDelVendedor">
-            <% for(let i=0; i<3;i++){ %>
-                <%    if (productos[i].coleccionista==productoEnDetalle.coleccionista){%>
+            <% const cant2 = []%>
+            <% for(let i=0; i<productos.length;i++){ %>
+                <%    if (productos[i].nombreProducto != productoEnDetalle.nombreProducto && productos[i].coleccionista==productoEnDetalle.coleccionista && cant2.length < 3){%>
+                    <% cant2.push(i) %>
                     <a href="/products/<%=productos[i].id %>">
-                        <img src="/img/products/<%=productos[i].imagen%>">
+                        <embed src="/img/products/<%=productos[i].imagen%>">
                     </a>
                     <% } %>
-                    <% }%>
+                    <% } %>
+                    
         </div>
         <h2>Similares</h2>
         <div class="similares">
-            <% for(let i=0; i<3;i++){ %>
-                <%    if (productos[i].categoria==productoEnDetalle.categoria){%>
+            <% const cant3 = []%>
+            <% for(let i=20; i<productos.length;i++){ %>
+                <%    if (productos[i].categoria==productoEnDetalle.categoria && cant3.length < 5){%>
+                    <% cant3.push(i) %>
                     <a href="/products/<%=productos[i].id %>">
-                        <img src="/img/products/<%=productos[i].imagen%>">
+                        <embed src="/img/products/<%=productos[i].imagen%>">
                     </a>
                     <% } %>
                     <% }%>
-            <video controls>
-                <source src="/img/products/vid-Lavish-JoAnieCharland-Similares.mp4" type="video/mp4">
-            </video>
         </div>
         <script src='/js/producto.js'></script>
     </main>

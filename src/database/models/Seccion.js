@@ -1,16 +1,16 @@
-function seccionesData(sequelize, Datatypes){
+module.exports = (sequelize, dataTypes) => {
 
-    alias = 'secciones';
+    alias = 'Seccion';
     
     cols = {
       id: {
-        type: Datatypes.INTEGER, 
+        type: dataTypes.INTEGER, 
         primaryKey: true, 
         autoIncrement: true,
         allowNull: false
       },
       nombre: {
-        type: Datatypes.STRING(100),
+        type: dataTypes.STRING(100),
         allowNull: false
       },
       }
@@ -19,9 +19,9 @@ function seccionesData(sequelize, Datatypes){
     
     const secciones = sequelize.define(alias,cols,config)
     
-    secciones.associate = function (modelos){
+    secciones.associate = function (models){
     
-        secciones.belongsTo(models.Producto, {
+        secciones.belongsTo(models.Productos, {
             as: 'productos',
             foreignKey: "FKseccion"
       });
@@ -32,4 +32,4 @@ function seccionesData(sequelize, Datatypes){
     }
     
     
-    module.exports = seccionesData;
+    // module.exports = seccionesData;

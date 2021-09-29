@@ -1,14 +1,18 @@
-const fs = require('fs');
-const path = require('path');
+// const fs = require('fs');
+// const path = require('path');
 
-const productsFilePath = path.join(__dirname, '../database/productsDatabase.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+// const productsFilePath = path.join(__dirname, '../database/productsDatabase.json');
+// const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+const db = require('../database/models');
+const Op = db.Sequelize.Op;
 
 const productController = {
     producto: (req, res) => {
-        res.render('./products/producto', {productos: products})
+		db.Productos.findAll()
+			.then((products) => {
+				res.render('./products/producto', {productos: products})
+			})
     },
 
     detalle: (req, res) => {

@@ -1,16 +1,16 @@
-function categoriasData(sequelize, Datatypes){
+function categoriasData(sequelize, dataTypes){
 
-    alias = 'categorias';
+    alias = 'Categoria';
     
     cols = {
       id: {
-        type: Datatypes.INTEGER, 
+        type: dataTypes.INTEGER, 
         primaryKey: true, 
         autoIncrement: true,
         allowNull: false
       },
       nombre: {
-        type: Datatypes.STRING(100),
+        type: dataTypes.STRING(100),
         allowNull: false
       },
       }
@@ -19,9 +19,9 @@ function categoriasData(sequelize, Datatypes){
     
     const categorias = sequelize.define(alias,cols,config)
     
-    categorias.associate = function (modelos){
+    categorias.associate = function (models){
     
-        categorias.belongsTo(models.Producto, {
+        categorias.belongsTo(models.Productos, {
             as: 'productos',
             foreignKey: "FKcategoria"
       });

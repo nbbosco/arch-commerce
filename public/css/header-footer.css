@@ -12,7 +12,7 @@ header {
     margin: auto;
 }
 header a{
-    color: black;
+    color: grey;
     text-decoration: solid;
 }
 .menu {
@@ -31,7 +31,7 @@ header a{
     display: block;
     justify-content: space-between;
     margin: auto;
-    width: 5vw;
+    width: 4vw;
 }
 
 footer {
@@ -77,6 +77,12 @@ footer {
 .footerderecha03 {
     text-align: right;
     padding-right: 1%;
+}
+.avatar{
+    display: block;
+
+    border-radius: 50px;
+    scale: 5%;
 }
 
 

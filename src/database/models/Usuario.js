@@ -1,42 +1,42 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function(sequelize, dataTypes) {
     const alias = "Usuario"
     const cols = {
         id: {
-            type:DataTypes.INTEGER(10).UNSIGNED,
+            type:dataTypes.INTEGER(10).UNSIGNED,
             primaryKey: true,
             autoIncrement: true,
             allowNull: false
         },
         nombre : {
-            type : DataTypes.STRING(255),
+            type : dataTypes.STRING(255),
             allowNull: false
         },
         apellido : {
-            type : DataTypes.STRING(255),
+            type : dataTypes.STRING(255),
             allowNull: false
         },
         email: {
-            type: DataTypes.STRING(255),
+            type: dataTypes.STRING(255),
             allowNull: false
         },
         contraseña: {
-            type: DataTypes.STRING(255),
+            type: dataTypes.STRING(255),
             allowNull: false
         },
         fecha_nacimiento : {
-            type : DataTypes.DATE
+            type : dataTypes.DATE
         },
         avatar : {
-            type : DataTypes.STRING(255)
+            type : dataTypes.STRING(255)
         },
         billetera : {
-            type : DataTypes.STRING(100)
+            type : dataTypes.STRING(100)
         },
         creador : {
-            type : DataTypes.INTEGER
+            type : dataTypes.INTEGER
         },
         fecha_inscripcion : {
-            type : DataTypes.DATE
+            type : dataTypes.DATE
         }
     }
     const config = {
@@ -47,7 +47,7 @@ const Usuario = sequelize.define(alias, cols, config);
 
 Usuario.associate = (models) => {
 
-    Usuario.belongsTo(models.Producto, {
+    Usuario.belongsTo(models.Productos, {
         as: 'productos',
         foreignKey: 'FKcreador'
     })

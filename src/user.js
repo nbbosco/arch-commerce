@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const usersFilePath = path.join(__dirname, '../database/userDatabase.json');
+const usersFilePath = path.join(__dirname, './database/userDatabase.json');
 
 const User = {
     fileName: usersFilePath,

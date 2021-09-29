@@ -1,16 +1,16 @@
-function formatosData(sequelize, Datatypes){
+function formatosData(sequelize, dataTypes){
 
-    alias = 'formatos';
+    alias = 'Formato';
     
     cols = {
       id: {
-        type: Datatypes.INTEGER, 
+        type: dataTypes.INTEGER, 
         primaryKey: true, 
         autoIncrement: true,
         allowNull: false
       },
       nombre: {
-        type: Datatypes.STRING(100),
+        type: dataTypes.STRING(100),
         allowNull: false
       },
       }
@@ -19,9 +19,9 @@ function formatosData(sequelize, Datatypes){
     
     const formatos = sequelize.define(alias,cols,config)
     
-    formatos.associate = function (modelos){
+    formatos.associate = function (models){
     
-        formato.belongsTo(models.Producto, {
+        formatos.belongsTo(models.Productos, {
             as: 'productos',
             foreignKey: "FKformato"
       });
