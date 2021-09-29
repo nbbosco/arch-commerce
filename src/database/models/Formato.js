@@ -21,7 +21,7 @@ function formatosData(sequelize, dataTypes){
     
     formatos.associate = function (models){
     
-        formatos.belongsTo(models.Productos, {
+        formatos.hasMany(models.Productos, {
             as: 'productos',
             foreignKey: "FKformato"
       });

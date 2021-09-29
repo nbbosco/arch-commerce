@@ -50,21 +50,25 @@ function productosData(sequelize, dataTypes){
     
     productos.associate = function (models){
 
-        productos.hasMany(models.Seccion,{
+        productos.belongsTo(models.Seccion,{
             as : 'secciones',
             foreignKey: 'FKseccion'
         }),
-        productos.hasMany(models.Categoria, {
+        productos.belongsTo(models.Categoria, {
             as : 'categorias',
             foreignKey: 'FKcategoria'
         }),
-        productos.hasMany(models.Usuario, {
+        productos.belongsTo(models.Usuario, {
             as : 'usuarios',
             foreignKey: 'FKcreadores'
         }),
-        productos.hasMany(models.Formato, {
+        productos.belongsTo(models.Formato, {
             as : 'formatos',
             foreignKey: 'FKformato'
+        }),
+        productos.hasMany(models.Venta, {
+            as : 'ventas',
+            foreignKey: 'FKproducto'
         })
         
     }

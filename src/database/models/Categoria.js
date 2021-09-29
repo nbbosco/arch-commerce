@@ -21,7 +21,7 @@ function categoriasData(sequelize, dataTypes){
     
     categorias.associate = function (models){
     
-        categorias.belongsTo(models.Productos, {
+        categorias.hasMany(models.Productos, {
             as: 'productos',
             foreignKey: "FKcategoria"
       });
