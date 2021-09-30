@@ -1,6 +1,6 @@
 function productosData(sequelize, dataTypes){
 
-    alias = 'Productos';
+    alias = 'Producto';
     
     cols = {
       id: {
