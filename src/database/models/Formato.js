@@ -1,6 +1,6 @@
 function formatosData(sequelize, dataTypes){
 
-    alias = 'Formato';
+    alias = 'formato';
     
     cols = {
       id: {
@@ -21,7 +21,7 @@ function formatosData(sequelize, dataTypes){
     
     formatos.associate = function (models){
     
-        formatos.hasMany(models.Producto, {
+        formatos.hasMany(models.producto, {
             as: 'productos',
             foreignKey: "FKformato"
       });

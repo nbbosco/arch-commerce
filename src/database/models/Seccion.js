@@ -1,6 +1,6 @@
 module.exports = (sequelize, dataTypes) => {
 
-    alias = 'Seccion';
+    alias = 'seccion';
     
     cols = {
       id: {
@@ -21,7 +21,7 @@ module.exports = (sequelize, dataTypes) => {
     
     secciones.associate = function (models){
     
-        secciones.hasMany(models.Producto, {
+        secciones.hasMany(models.producto, {
             as: 'productos',
             foreignKey: "FKseccion"
       });

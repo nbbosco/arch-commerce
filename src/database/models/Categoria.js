@@ -1,6 +1,6 @@
 function categoriasData(sequelize, dataTypes){
 
-    alias = 'Categoria';
+    alias = 'categoria';
     
     cols = {
       id: {
@@ -21,7 +21,7 @@ function categoriasData(sequelize, dataTypes){
     
     categorias.associate = function (models){
     
-        categorias.hasMany(models.Producto, {
+        categorias.hasMany(models.producto, {
             as: 'productos',
             foreignKey: "FKcategoria"
       });

@@ -1,6 +1,6 @@
 function productosData(sequelize, dataTypes){
 
-    alias = 'Producto';
+    alias = 'producto';
     
     cols = {
       id: {
@@ -44,29 +44,29 @@ function productosData(sequelize, dataTypes){
       }
     }
     
-    config = {camelCase: false, timestamps: false}; 
+    config = {camelCase: false, timestamps: false, tableName: 'producto'}; 
     
     const productos = sequelize.define(alias,cols,config)
     
     productos.associate = function (models){
 
-        productos.belongsTo(models.Seccion,{
+        productos.belongsTo(models.seccion,{
             as : 'secciones',
             foreignKey: 'FKseccion'
         }),
-        productos.belongsTo(models.Categoria, {
+        productos.belongsTo(models.categoria, {
             as : 'categorias',
             foreignKey: 'FKcategoria'
         }),
-        productos.belongsTo(models.Usuario, {
+        productos.belongsTo(models.usuario, {
             as : 'usuarios',
-            foreignKey: 'FKcreadores'
+            foreignKey: 'FKcreador'
         }),
-        productos.belongsTo(models.Formato, {
+        productos.belongsTo(models.formato, {
             as : 'formatos',
             foreignKey: 'FKformato'
         }),
-        productos.hasMany(models.Venta, {
+        productos.hasMany(models.venta, {
             as : 'ventas',
             foreignKey: 'FKproducto'
         })
