@@ -140,17 +140,17 @@ const productController = {
 	search: (req, res) => {
         db.Productos.findAll({
             where: {
-                nombre: {[Op.like]: '%' + req.query.keyword + '%'}
+				[Op.or]: [{nombre: {[Op.like]: '%' + req.query.keyword + '%'}}, {creador: {[Op.like]: '%' + req.query.keyword + '%'}}]
             }
         })
-        .then(products => {
+        .then(async products => {
             if (products.length > 0){
                 res.render('./products/productoSearch', {productos: products})
-            }
-            alert('No existen productos')
-            })
-        },
-}
-
+            } else {
+				res.send('No se encontro producto')
+			}
+        })
+}
+}
 module.exports = productController;
 

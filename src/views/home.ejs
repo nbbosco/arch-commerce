@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles-home.css">
 </head>
-
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <body>
     <header>
         <div class="menu">
@@ -33,7 +33,7 @@
     <div class="buscadores">
         <div class="buscador1">
         <h4>Buscador</h4>
-        <input type="text" placeholder="Busca productos, colecciones, perfiles..." id='input'></input>
+        <input type="text" name='keyword' placeholder="Busca productos, colecciones, perfiles..." id='input'></input>
         <button type="submit" id='boton'></button>
         </div>
         <div class="buscador2">
@@ -95,44 +95,50 @@
         <a href="/products">
         <div class="sec-secundaria">
             <div>
-                <img src="/img/products/img-ParisAndChill3-FlorentBoston-SecSecundaria.jpg">
+                <!-- <img src="/img/products/img-ParisAndChill3-FlorentBoston-SecSecundaria.jpg"> -->
+                <model-viewer src="/img/models/alpha-blend-litmus.glb" alt="A 3D model of an astronaut" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
                 <h3>Paris and Chill 3/5</h3>
                 <h5>Florent Boston</h5>
                 <p>320ETH</p>
             </div>
 
             <div>
-                <video controls>
+                <!-- <video controls>
                     <source src="/img/products/vid-CattelanHouse-Rek0de-SecSecundaria.mp4" type="video/mp4">
-                </video>
+                </video> -->
+                <model-viewer src="/img/models/astronaut.glb" alt="A 3D model of an astronaut" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
                 <h3>Cattelan House</h3>
                 <h5>Rek0de</h5>
                 <p>320ETH</p>
             </div>
 
             <div>
-                <img src="/img/products/img-DreamSceneNo.3-MrBuckley-SecSecundaria.jpg">
+                <!-- <img src="/img/products/img-DreamSceneNo.3-MrBuckley-SecSecundaria.jpg"> -->
+                <model-viewer src="/img/models/radiance.glb" alt="A 3D model of an astronaut" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
                 <h3>Dream scene No.3</h3>
                 <h5>Mr. Buckley</h5>
                 <p>369ETH</p>
             </div>
 
             <div>
-                <img src="/img/products/img-FortresHill-DesmondLo-SecSecundaria.jpg">
+                <!-- <img src="/img/products/img-FortresHill-DesmondLo-SecSecundaria.jpg"> -->
+                <model-viewer src="/img/models/RobotExpressive.glb" alt="A 3D model of an astronaut" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
                 <h3>Fortres hill</h3>
                 <h5>Desmond Lo</h5>
                 <p>320ETH</p>
             </div>
 
             <div>
-                <img src="/img/products/img-Interior&Reflections-FrancescoFlore-SecSecundaria.jpg">
+                <!-- <img src="/img/products/img-Interior&Reflections-FrancescoFlore-SecSecundaria.jpg"> -->
+                <model-viewer src="/img/models/shishkebab.glb" alt="A 3D model of an astronaut" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
                 <h3>Interior & Reflections</h3>
                 <h5>Francesco Flore</h5>
                 <p>320ETH</p>
             </div>
 
             <div>
-                <img src="/img/products/img-TheShadow-KennyFlatten-SecSecundaria.jpg">
+                <!-- <img src="/img/products/img-TheShadow-KennyFlatten-SecSecundaria.jpg"> -->
+                <model-viewer src="/img/models/fish.glb" alt="A 3D model of an astronaut" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
                 <h3>The shadow</h3>
                 <h5>KennyFlatten</h5>
                 <p>320ETH</p>

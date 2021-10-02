@@ -95,6 +95,9 @@ main p {
     text-align: center;
     font-size: 90%;
 }
+main a {
+    text-decoration: solid;
+}
 .sec-principal {
     display: flex;
     flex-wrap: wrap;
@@ -125,7 +128,7 @@ main p {
     margin-bottom: 60px
 }
 
-.sec-secundaria img {
+.sec-secundaria img, model-viewer {
     width: 25vw;
     height: 300px;
     object-fit: cover;
@@ -225,7 +228,9 @@ footer {
 .estiloHref{
     text-decoration: none;
 }
-
+#boton {
+    display: none;
+}
 
 
 
