@@ -27,9 +27,11 @@ router.post('/create', uploadFile.single('imagen'), productsController.store);
 router.get('/:id', productsController.detalle); 
 
 router.get('/:id/edit', productsController.editar); 
-router.put('/:id/edit', productsController.update); 
+router.post('/:id/edit', productsController.update); 
 
-router.delete('/:id', productsController.destroy); 
+router.post('/:id/delete', productsController.destroy); 
+
+router.get('/search/input', productsController.search)
 
 
 module.exports = router;

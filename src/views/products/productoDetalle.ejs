@@ -23,16 +23,18 @@
                 <img src="/img/products/<%=productoEnDetalle.imagen%>" class="descripcionIzq">
             </div>
             <div class="descripcionDer">
-                <h1><%=productoEnDetalle.nombreProducto%></h1>
+                <h1><%=productoEnDetalle.nombre%></h1>
                 <h3><i class="fas fa-user-circle"></i><%=productoEnDetalle.creador%></h3>
                 <h3><i class="fas fa-user-circle"></i><%=productoEnDetalle.coleccionista%></h3>
                 <p><%=productoEnDetalle.descripcion%></p>
                 <p id='fecha'><%=productoEnDetalle.fechaDeCreacion%></p>
                 <p><%=productoEnDetalle.categoria%></p>
+                <% if (locals.isLogged) { %>
                 <a href="/products/<%= productoEnDetalle.id %>/edit"><button class="botonExtra">Editar</button></a>
-                <form action="/products/<%= productoEnDetalle.id%>?_method=DELETE" method="POST" onsubmit="return confirm('¿Estas seguro que queres borrar <%=productoEnDetalle.nombreProducto%>?')">
+                <form action="/products/<%= productoEnDetalle.id%>/delete" method="POST" onsubmit="return confirm('¿Estas seguro que queres borrar <%=productoEnDetalle.nombre%>?')">
                     <button type="submit" class="botonExtra">Eliminar</button>
                 </form>
+                <% } %> 
                 <a href="/products/carrito">
                 <button class="botonPrincipal">Añadir al carrito / Ofertas</button>
                 </a>
@@ -45,7 +47,7 @@
         <div class="masDelCreador">
         <% const cant = []%>
         <% for(let i=0; i<productos.length;i++){ %>
-        <%    if (productos[i].nombreProducto != productoEnDetalle.nombreProducto && productos[i].creador==productoEnDetalle.creador && cant.length < 2){%>
+        <%    if (productos[i].nombre != productoEnDetalle.nombre && productos[i].creador==productoEnDetalle.creador && cant.length < 2){%>
             <% cant.push(i) %>
             <a href="/products/<%=productos[i].id %>">
             <embed src="/img/products/<%=productos[i].imagen%>">
@@ -57,7 +59,7 @@
         <div class="masDelVendedor">
             <% const cant2 = []%>
             <% for(let i=0; i<productos.length;i++){ %>
-                <%    if (productos[i].nombreProducto != productoEnDetalle.nombreProducto && productos[i].coleccionista==productoEnDetalle.coleccionista && cant2.length < 3){%>
+                <%    if (productos[i].nombre != productoEnDetalle.nombre && productos[i].FKcoleccionista==productoEnDetalle.FKcoleccionista && cant2.length < 3){%>
                     <% cant2.push(i) %>
                     <a href="/products/<%=productos[i].id %>">
                         <embed src="/img/products/<%=productos[i].imagen%>">

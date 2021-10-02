@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de Detalle de producto</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/header-footer.css">
+    <link rel="stylesheet" href="/css/styles-producto.css">
+
+</head>
+<body>
+    <!-- header -->
+    <%- include('../partials/header') %>
+    <h2>Productos relacionados a la busqueda </h2>
+    <br>
+    <main>
+        <% for(let i=0; i<productos.length;i++) { %>
+        <div class="sec-populares">
+            <a href="/products/<%=productos[i].id %>">
+            <embed src="/img/products/<%=productos[i].imagen%>" muted>
+            </a>
+        </div>
+        <% } %>
+    </main>
+
+    <!-- footer -->
+    <%- include('../partials/footer') %>
+    
+</body>
+</html>

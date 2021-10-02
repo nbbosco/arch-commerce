@@ -19,6 +19,11 @@ body {
 
 .titulares1 a{
     color: black;
+    text-decoration: solid;
+}
+
+.titulares1 h5{
+    color: #b8b451;    
 }
 
 .titulares2 {

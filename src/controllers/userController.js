@@ -3,22 +3,28 @@ const path = require('path');
 const bcryptjs = require('bcryptjs');
 const { validationResult } = require('express-validator');
 
-const usersFilePath = path.join(__dirname, '../database/userDatabase.json');
-const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-
 const User = require('../user.js')
+
+const db = require('../database/models');
+const Op = db.Sequelize.Op;
 
 const userController = {
     login: (req, res) => {
+        
         res.render('./users/login')
     },
     loginProcess: (req, res) => {
-        let userToLogin = User.findByField('email', req.body.email);
-        if(userToLogin){
-            let comparePassword = bcryptjs.compareSync(req.body.contraseña, userToLogin.contraseña);
+        db.Usuarios.findOne({
+            where : {
+                email : req.body.email
+            }
+        })
+        .then(usuario => {
+        if(usuario){
+            let comparePassword = bcryptjs.compareSync(req.body.contraseña, usuario.contraseña);
             if (comparePassword) {
-                delete userToLogin.contraseña;
-                req.session.userLogged = userToLogin;
+                delete usuario.contraseña;
+                req.session.userLogged = usuario;
 
                 if(req.body.remember_user) {
                     res.cookie('userEmail', req.body.email, {maxAge: (1000*60)*2})
@@ -33,7 +39,8 @@ const userController = {
                     msg: 'Las credenciales son inválidas'
                 }
             }
-        });
+        })
+    })
     },
     profile: (req, res) => {
         return res.render('./users/profile',{
@@ -58,7 +65,16 @@ const userController = {
                 oldData: req.body
             })
         }
-        let userInDB = User.findByField('email', req.body.email);
+        let userInDB
+        db.Usuarios.findAll({
+            where : {
+                email : {[Op.like] : req.body.email}
+            }
+        })
+        .then (usuarios => {
+            userInDB = usuarios
+        })
+        //let userInDB = User.findByField('email', req.body.email);
 
         if (userInDB) {
             return res.render('users/registro', {
@@ -67,17 +83,26 @@ const userController = {
                 },
                 oldData: req.body
             })
+        } else {
+            db.Usuarios.create ({
+                nombre: req.body.nombre,
+                apellido: req.body.apellido,
+                email: req.body.email,
+                contraseña: bcryptjs.hashSync(req.body.contraseña, 10),
+                avatar: req.file.filename,
+            })
+            return res.redirect('/users/login');
         }
 
-        let userToCreate = {
-            ...req.body,
-            contraseña: bcryptjs.hashSync(req.body.contraseña, 10),
-            avatar: req.file.filename
-        }
+        // let userToCreate = {
+        //     ...req.body,
+        //     contraseña: bcryptjs.hashSync(req.body.contraseña, 10),
+        //     avatar: req.file.filename
+        // }
 
-        let userCreated = User.create(userToCreate);
+        //let userCreated = User.create(userToCreate);
 
-        return res.redirect('/users/login');
+        
     },
     store: (req, res) => {
         let idNuevo = products[products.length-1].id + 1;
@@ -95,27 +120,46 @@ const userController = {
 
 		let nombreImagen = req.file.filename
 
-		for(let i=0;i<users.length;i++){
-			if (products[i].id==idUser){
+        if (idUser == db.Usuarios.id){
+            let userEncontrado = {
+                nombre: valoresNuevos.nombre,
+                apellido: valoresNuevos.apellido,
+                email: valoresNuevos.email,
+                telefono: valoresNuevos.telefono,
+                fechaNacimiento: valoresNuevos.fechaNacimiento,
+                creador: valoresNuevos.creador,
+                coleccionista: valoresNuevos.coleccionista
+            }
+            db.Usuarios.update ({
+                userEncontrado
+            }, {
+                where : {
+                    id : idUser
+                }
+            })
+        }
+		// for(let i=0;i<users.length;i++){
+		// 	if (products[i].id==idUser){
+        //         var imagenAnterior = users[i].imagen
+        //         users[i].imagen,
+		// 		users[i].nombre = valoresNuevos.nombre,
+        //         users[i].apellido = valoresNuevos.apellido,
+        //         users[i].nombre = valoresNuevos.nombre,
+        //         users[i].email = valoresNuevos.email,
+        //         users[i].telefono = valoresNuevos.telefono,
+        //         users[i].fechaNacimiento = valoresNuevos.fechaNacimiento,
+        //         users[i].creador = valoresNuevos.creador,
+        //         users[i].coleccionista = valoresNuevos.coleccionista
 				
-				var imagenAnterior = users[i].imagen
-				users[i].nombre = valoresNuevos.nombre;
-                users[i].apellido = valoresNuevos.apellido;
-                users[i].nombre = valoresNuevos.nombre;
-                users[i].email = valoresNuevos.email;
-                users[i].telefono = valoresNuevos.telefono;
-                users[i].fechaNacimiento = valoresNuevos.fechaNacimiento;
-                users[i].creador = valoresNuevos.creador;
-                users[i].coleccionista = valoresNuevos.coleccionista;
 
-				var userEncontrado = users[i];
+		// 		var userEncontrado = users[i];
 
-				break;
-			}
-		}
+		// 		break;
+		// 	}
+		// }
 
-		fs.writeFileSync(usersFilePath, JSON.stringify(users,null,4));
-		fs.unlinkSync(path.join(__dirname,'../../public/img/' + imagenAnterior));
+		// fs.writeFileSync(usersFilePath, JSON.stringify(users,null,4));
+		// fs.unlinkSync(path.join(__dirname,'../../public/img/' + imagenAnterior));
 		res.render('./users/editar', {users: userEncontrado});
 	},
 }

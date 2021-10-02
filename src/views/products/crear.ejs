@@ -51,21 +51,13 @@
         </div>
         <div class="control-formulario">
             <h3>Categoria</h3>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Animación"></input>Animación</label>
-            <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="3d"></input>3d</label>
-            <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Ilustración"></input>Ilustración</label>
-            <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Surreal"></input>Surreal</label>
-            <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Raro"></input>Raro</label>
-            <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Color"></input>Color</label>
-            <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Abstracto"></input>Abstracto</label>
-            <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Otro"></input>Otro...</label>
+            <select name="categoria">
+                <% for (let i=0; i < categoria.length; i++) { %>
+                <option value="<%=categoria[i].id%>">
+                    <%=categoria[i].nombre%>
+                </option>
+                <% } %>
+            </select>
         </div>
         <div class="control-formulario">
             <h3>Subir archivos</h3>

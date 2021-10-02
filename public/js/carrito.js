@@ -16,5 +16,9 @@ comprar.addEventListener("mouseover", function(){
 comprar.addEventListener("mouseout", function(){
     comprar.style.border='none'
 })
+let vaciar = document.querySelector('#vaciar');
+vaciar.addEventListener("click", function(){
+    localStorage.clear('datosCarrito')
+})
 })
     

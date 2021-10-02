@@ -1,5 +1,7 @@
-module.exports = function(sequelize, dataTypes) {
-    const alias = "Usuario"
+function usuariosData(sequelize, dataTypes) {
+
+    const alias = "Usuarios"
+
     const cols = {
         id: {
             type:dataTypes.INTEGER(10).UNSIGNED,
@@ -24,7 +26,8 @@ module.exports = function(sequelize, dataTypes) {
             allowNull: false
         },
         fecha_nacimiento : {
-            type : dataTypes.DATE
+            type : dataTypes.DATE,
+            defaultValue: '1996-10-10'
         },
         avatar : {
             type : dataTypes.STRING(255)
@@ -32,26 +35,30 @@ module.exports = function(sequelize, dataTypes) {
         billetera : {
             type : dataTypes.STRING(100)
         },
-        creador : {
+        coleccionista : {
             type : dataTypes.INTEGER
         },
         fecha_inscripcion : {
-            type : dataTypes.DATE
+            type : dataTypes.DATE,
+            defaultValue: '2021-10-10'
         }
-    }
-    const config = {
-        tableName: "usuario",
-        timestamp: true,
+    
 }
 const Usuario = sequelize.define(alias, cols, config);
 
 Usuario.associate = (models) => {
 
-    Usuario.belongsTo(models.Productos, {
+    Usuario.hasMany(models.Productos, {
         as: 'productos',
-        foreignKey: 'FKcreador'
+        foreignKey: 'FKcoleccionista'
+    })
+    Usuario.hasMany(models.Venta, {
+        as : 'ventas',
+        forgeinKey: 'Fkusuario'
     })
 }
 
 return Usuario
 }
+
+module.exports = usuariosData;

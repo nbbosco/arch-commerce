@@ -1,7 +1,6 @@
 var carrito = []
 window.addEventListener("load", function(){
     boton = document.querySelector('.botonPrincipal')
-    // localStorage.clear('datosCarrito')
 boton.onclick = function (){
     
     let nombre = document.querySelector('h1').innerHTML

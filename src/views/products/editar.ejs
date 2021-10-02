@@ -21,7 +21,7 @@
         <ul>
         </ul>
     </div>
-     <form action="/products/<%= productoEnDetalle.id%>?_method=PUT/edit" method="POST" class="formulario">
+     <form action="/products/<%= productoEnDetalle.id%>/edit" method="POST" class="formulario">
         <br>
         <div class="control-formulario">
             <h3>Perfil del usuario</h3>
@@ -30,60 +30,58 @@
         </div>
         <div class="control-formulario">
             <p>Creador</p>
-            <input type="text" name="creador" id="creador" placeholder="<%=productoEnDetalle.creador%>" class="control">
+            <input type="text" name="creador" id="creador" value="<%=productoEnDetalle.creador%>" class="control">
         </div>
         <div class="control-formulario">
             <p>Vendedor / Coleccionista</p>
-            <input type="text" name="coleccionista" id="coleccionista" placeholder="<%=productoEnDetalle.coleccionista%>" class="control">
+            <input type="text" name="coleccionista" id="coleccionista"  placeholder="<%=usuario[productoEnDetalle.FKcoleccionista].nombre%>" value="<%=productoEnDetalle.FKcoleccionista%>" class="control">
         </div>
         <div class="control-formulario">
             <h3>Sobre el producto</h3>
-            <p>Fecha de creacion: <%=productoEnDetalle.fechaDeCreacion%></p>
-            <input type="date" name="fechaDeCreacion" id="fechaDeCreacion" min='1900-01-01' max="2010-01-01" class="control">
             <p>Precio base de la subasta</p>
-            <input type="number" name="precio" id="precio" placeholder="<%=productoEnDetalle.precio%>ETH" class="control">
+            <input type="number" name="precio" id="precio" value="<%=productoEnDetalle.precio%>" class="control">
         </div>
         <div class="control-formulario">
             <p>Nombre Producto</p>
-            <input type="text" name="nombreProducto" id="nombreProducto" placeholder="<%=productoEnDetalle.nombreProducto%>" minlength="3" class="control">
+            <input type="text" name="nombreProducto" id="nombreProducto" value="<%=productoEnDetalle.nombre%>" minlength="3" class="control">
         </div>
         <div class="control-formulario">
             <p>Colección</p>
-            <input type="text" name="coleccion" id="coleccion" placeholder="<%=productoEnDetalle.coleccion%>" minlength="3" class="control">
+            <input type="text" name="coleccion" id="coleccion" value="<%=productoEnDetalle.coleccion%>" minlength="3" class="control">
         </div>
         <div class="control-formulario">
             <p>Descripcion</p>
-            <textarea name="descripcion" id="descripcion" placeholder="<%=productoEnDetalle.descripcion%>" class="control"></textarea>
+            <input name="descripcion" id="descripcion" value="<%=productoEnDetalle.descripcion%>" class="control"></input>
         </div>
         <div class="control-formulario">
             <h3>Categoria</h3>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Animación"></input>Animación</label>
-            <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="3d"></input>3d</label>
-            <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Ilustración"></input>Ilustración</label>
-            <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Surreal"></input>Surreal</label>
-            <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Raro"></input>Raro</label>
-            <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Color"></input>Color</label>
-            <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Abstracto"></input>Abstracto</label>
-            <br>
-            <label class="check"><input type="checkbox" name="categoria" id="categoria" value="Otro"></input>Otro...</label>
+            <select name="categoria">
+                <% for (let i=0; i < categoria.length; i++) { %>
+                    <% if (categoria[i].id == productoEnDetalle.FKcategoria){ %>
+                        <option value="<%=categoria[i].id%>" selected>
+                            <%=categoria[i].nombre%>
+                        </option>
+                        <% } else { %>
+                        <option value="<%=categoria[i].id%>">
+                            <%=categoria[i].nombre%>
+                        </option>
+                     <% } %>
+                <% } %>
+            </select>
         </div>
         <div class="control-formulario">
             <h3>Subir archivos</h3>
             <p>Imagen principal del producto</p>
             <img src="../../img/products/<%=productoEnDetalle.imagen%>" style="width: 150px;">
             <input type="file" name="imagen" id="imagen" accept="image/*" class="control"></input>
-            <p>Archivo original del producto</p>
-            <input type="file" name="productoOriginal" id="productoOriginal" accept="video/*" class="control"></input>
             <p>Formato</p>
-            <label class="radio"><input type="radio" name="formato" id="formato" value="jpg"></input>Imagen</label>
-            <label class="radio"><input type="radio" name="formato" id="formato" value="mp4"></input>Video</label>
-            <label class="radio"><input type="radio" name="formato" id="formato" value="3d"></input>Modelo</label>
+            <select name="categoria">
+                <% for (let i=0; i < formato.length; i++) { %>
+                <option value="<%=formato[i].id%>">
+                    <%=formato[i].nombre%>
+                </option>
+                <% } %>
+            </select>
         </div>
         </div>
         <button type="submit" class="boton-formulario">Editar</button>

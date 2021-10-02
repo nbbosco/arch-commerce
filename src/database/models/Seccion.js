@@ -21,7 +21,7 @@ module.exports = (sequelize, dataTypes) => {
     
     secciones.associate = function (models){
     
-        secciones.belongsTo(models.Productos, {
+        secciones.hasMany(models.Productos, {
             as: 'productos',
             foreignKey: "FKseccion"
       });

@@ -41,6 +41,22 @@
             </div>
         <% } %>
         <br>
+
+        <input 
+        type="text" 
+        name="apellido" 
+        placeholder="Apellido (será visto públicamente)" 
+        id="subdomain" 
+        class="<%= locals.errors && errors.apellido ? 'invalido' : null %>"
+        value="<%= locals.oldData ? oldData.apellido : null %>"
+        >
+    <% if (locals.errors && errors.apellido) { %>
+        <div class="texto-error">
+           <%= errors.apellido.msg %>
+        </div>
+    <% } %>
+    <br>
+    
         <input 
             type="email" 
             name="email" 

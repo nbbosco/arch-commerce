@@ -1,60 +1,66 @@
-const DB = require('../database/models');
-const Op = DB.Sequelize.Op;
-
-const fs = require('fs');
-const path = require('path');
-
-const productsFilePath = path.join(__dirname, '../database/productsDatabase.json');
-const productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-
-const usersFilePath = path.join(__dirname, '../database/userDatabase.json');
-const usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+const db = require('../database/models');
+const Op = db.Sequelize.Op;
 
 module.exports = {
     productsList: (req, res) => {
-        return res.status(200).json({
-            total: productsDB.length,
-            data: productsDB,
-            status: 200
-            })
+        db.Productos.findAll()
+        .then(products => {
+            return res.status(200).json({
+                total: products.length,
+                data: products,
+                status: 200
+                })
+        })
         },
     productsShow: (req, res) => {
-        let idDB= req.params.id
-        for(let i=0;i<productsDB.length;i++){
-            if (productsDB[i].id==idDB){
-                var findDB = productsDB[i];
-            }
-        }
-        return res.status(200).json({
-            data: findDB,
-            status: 200
-            })
+        db.Productos.findByPk(req.params.id)
+        .then(products => {
+            return res.status(200).json({
+                data: products,
+                status: 200
+                })
+        })
     },
     categoryList: (req, res) => {
-        let categoriaDB = productsDB
-        return res.status(200).json({
-            total: categoriaDB.length,
-            data: categoriaDB,
-            status: 200
+        db.Categorias.findAll()
+        .then(category => {
+            return res.status(200).json({
+                total: category.length,
+                data: category,
+                status: 200
+                })
+        })
+        },
+    productsSearch: (req, res) => {
+        db.Productos.findAll({
+            where: {
+                nombre: {[Op.like]: '%' + req.query.keyword + '%'}
+            }
+        })
+        .then(products => {
+            if (products.length > 0){
+                return res.status(200).json(products)
+            }
+            return res.status(200).json('No existen productos')
             })
         },
     usersList: (req, res) => {
-        return res.status(200).json({
-            total: usersDB.length,
-            data: usersDB,
-            status: 200
+            db.Usuarios.findAll()
+            .then(users => {
+                return res.status(200).json({
+                    total: users.length,
+                    data: users,
+                    status: 200
+                    })
             })
         },
     usersShow: (req, res) => {
-        let idDB= req.params.id
-        for(let i=0;i<usersDB.length;i++){
-            if (usersDB[i].id==idDB){
-                var findDB = usersDB[i];
-            }
-        }
-        return res.status(200).json({
-            data: findDB,
-            status: 200
-            })
+        db.Usuarios.findByPk(req.params.id)
+        .then(users => {
+            return res.status(200).json({
+                data: users,
+                status: 200
+                })
+        })
     }
 }

@@ -11,6 +11,13 @@ main{
 main h1 {
     color: #b8b451;
 }
+h2 {
+    color: #b8b451;
+    text-align: left;
+    margin: auto;
+    width: 90vw;
+    padding: 40px 20px 10px;
+}
 main h2 {
     color: #b8b451;
     text-align: left;

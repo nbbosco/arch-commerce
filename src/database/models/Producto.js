@@ -26,22 +26,26 @@ function productosData(sequelize, dataTypes){
       },
       FKseccion : {
           type: dataTypes.INTEGER,
-          allowNull: false
+          defaultValue: "2"
       },
       FKcategoria : {
           type: dataTypes.INTEGER,
           allowNull: false
       },
-      fecha_de_creacion : {
+      fechaDeCreacion : {
           type: dataTypes.DATE
       },
-      FKcreador : {
-          type: dataTypes.INTEGER,
+      creador : {
+          type: dataTypes.STRING(255),
           allowNull: false
       },
       FKformato : {
+          type: dataTypes.INTEGER,
+          defaultValue: "1"
+      },
+      FKcoleccionista : {
           type: dataTypes.INTEGER
-      }
+    }
     }
     
     config = {camelCase: false, timestamps: false}; 
@@ -50,21 +54,25 @@ function productosData(sequelize, dataTypes){
     
     productos.associate = function (models){
 
-        productos.hasMany(models.Seccion,{
+        productos.belongsTo(models.Seccion,{
             as : 'secciones',
             foreignKey: 'FKseccion'
         }),
-        productos.hasMany(models.Categoria, {
+        productos.belongsTo(models.Categorias, {
             as : 'categorias',
             foreignKey: 'FKcategoria'
         }),
-        productos.hasMany(models.Usuario, {
+        productos.belongsTo(models.Usuarios, {
             as : 'usuarios',
-            foreignKey: 'FKcreadores'
+            foreignKey: 'FKcoleccionista'
         }),
-        productos.hasMany(models.Formato, {
+        productos.belongsTo(models.Formatos, {
             as : 'formatos',
             foreignKey: 'FKformato'
+        })
+        productos.hasMany(models.Venta, {
+            as : 'ventas',
+            forgeinKey: 'FkProducto'
         })
         
     }

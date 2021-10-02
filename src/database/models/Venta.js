@@ -21,13 +21,13 @@ function ventasData(sequelize, dataTypes){
       vendido : {
           type: dataTypes.INTEGER
       },
-      FKproducto : {
+      FKProducto : {
           type: dataTypes.INTEGER
       },
       precio : {
           type: dataTypes.INTEGER
       },
-      FKusuario : {
+      FKUsuario : {
           type: dataTypes.INTEGER
       }
 
@@ -41,11 +41,11 @@ function ventasData(sequelize, dataTypes){
     
         ventas.belongsTo(models.Productos, {
             as: 'productos',
-            foreignKey: 'FKproducto'
+            foreignKey: 'FKProducto'
       }),
-      ventas.belongsTo(models.Usuario, {
+      ventas.belongsTo(models.Usuarios, {
           as: 'usuarios',
-          foreignKey: 'FKusuario'
+          foreignKey: 'FKUsuario'
       })
     }
     
