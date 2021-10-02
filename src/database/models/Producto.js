@@ -69,7 +69,7 @@ function productosData(sequelize, dataTypes){
         productos.belongsTo(models.Formatos, {
             as : 'formatos',
             foreignKey: 'FKformato'
-        })
+        }),
         productos.hasMany(models.Venta, {
             as : 'ventas',
             forgeinKey: 'FkProducto'

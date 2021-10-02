@@ -44,6 +44,9 @@ function usuariosData(sequelize, dataTypes) {
         }
     
 }
+
+config = {camelCase: false, timestamps: false}; 
+
 const Usuario = sequelize.define(alias, cols, config);
 
 Usuario.associate = (models) => {
