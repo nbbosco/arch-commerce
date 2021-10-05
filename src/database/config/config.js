@@ -1,7 +1,7 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": '',
+    "password": 'Xinomeno0',
     "database": "arch_commerce",
     "host": "127.0.0.1",
     "dialect": "mysql",

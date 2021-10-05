@@ -90,6 +90,7 @@ const userController = {
                 email: req.body.email,
                 contraseña: bcryptjs.hashSync(req.body.contraseña, 10),
                 avatar: req.file.filename,
+                coleccionista: req.body.coleccionista
             })
             return res.redirect('/users/login');
         }
@@ -118,26 +119,18 @@ const userController = {
 		let valoresNuevos = req.body;
 		let idUser= req.params.id
 
-		let nombreImagen = req.file.filename
-
-        if (idUser == db.Usuarios.id){
-            let userEncontrado = {
-                nombre: valoresNuevos.nombre,
-                apellido: valoresNuevos.apellido,
-                email: valoresNuevos.email,
-                telefono: valoresNuevos.telefono,
-                fechaNacimiento: valoresNuevos.fechaNacimiento,
-                creador: valoresNuevos.creador,
-                coleccionista: valoresNuevos.coleccionista
+        db.Usuarios.update ({
+            nombre: valoresNuevos.nombre,
+            apellido: valoresNuevos.apellido,
+            email: valoresNuevos.email,
+            fecha_nacimiento: valoresNuevos.fecha_nacimiento,
+            // avatar: req.file.filename,
+            coleccionista: valoresNuevos.coleccionista
+        }, {
+            where : {
+                id : idUser
             }
-            db.Usuarios.update ({
-                userEncontrado
-            }, {
-                where : {
-                    id : idUser
-                }
-            })
-        }
+        })
 		// for(let i=0;i<users.length;i++){
 		// 	if (products[i].id==idUser){
         //         var imagenAnterior = users[i].imagen
@@ -160,7 +153,7 @@ const userController = {
 
 		// fs.writeFileSync(usersFilePath, JSON.stringify(users,null,4));
 		// fs.unlinkSync(path.join(__dirname,'../../public/img/' + imagenAnterior));
-		res.render('./users/editar', {users: userEncontrado});
+		res.redirect('/users/login');
 	},
 }
 

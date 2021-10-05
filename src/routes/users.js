@@ -53,7 +53,7 @@ router.post('/login',userController.loginProcess);
 router.get('/registro', guestMiddleware, userController.registro);
 router.post('/registro', uploadFile.single('avatar'), validations, userController.processRegister);
 router.get ('/:id/editar', userController.editar);
-router.put ('/:id/editar', userController.update);
+router.post ('/:id/editar', userController.update);
 router.get('/profile', userController.profile);
 router.get('/logout', userController.logout);
 

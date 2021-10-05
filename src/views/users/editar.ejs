@@ -22,36 +22,55 @@
             </ul>
         </div>
         <main>
-            <form action='/users/<%= user.id%>?_method=PUT/edit' method='POST' class='formulario'>
+            <form action='/users/<%= user.id%>/editar' method='POST' class='formulario'>
                 <div class='control-formulario'>
+                    <br>
                     <h3>Nombre completo</h3>
-                    <input type='text' name='nombre' id='nombre' placeholder='<%=user.nombre%>'>
+                    <input type='text' name='nombre' id='nombre' value='<%=user.nombre%>'>
+                    <input type='text' name='apellido' id='apellido' value='<%=user.apellido%>'>
                 </div>
                 <div class='control-formulario'>
-                    <input type='email' name='email' id='email' placeholder='<%=user.email%>'>
-                </div>
-                <div class='control-formulario'>
-                    <h3>Número de telefono</h3>
-                    <input type='tel' name='telefono' id='telefono' placeholder='<%=user.telefono%>'>
+                    <h3>Email</h3>
+                    <input type='email' name='email' id='email' value='<%=user.email%>'>
                 </div>
                 <div class='control-formulario'>
                     <h3>Fecha de nacimiento</h3>
-                    <input type='date' name='fehcaNacimiento' id='fehcaNacimiento' placeholder='<%=user.fechaNacimiento%>'>
+                    <input type='date' name='fehcha_nacimiento' id='fehcha_nacimiento' value='<%=user.fechaNacimiento%>'>
                 </div>
                 <div class='control-formulario'>
                     <h3>Foto de perfil</h3>
-                    <input type='file' name='fotoPerfil' id='fotoPerfil' placeholder='<%=user.fotoPerfil%>' accept=".jpg, .jpeg, .png">
+                    <img src="../../img/users/<%=user.avatar%>" style="width: 150px;">
+                    <br>
+                    <input type='file' name='fotoPerfil' id='fotoPerfil' value='<%=user.avatar%>' accept=".jpg, .jpeg, .png">
                 </div>
                 <div class='control-formulario'>
                     <h3>Tipo de perfil</h3>
-                    <label class="radio"><input type="radio" name="perfil" id="perfil" value="Creador"></input>Creador</label>
-                    <label class="radio"><input type="radio" name="perfil" id="perfil" value="Vendedor" ></input>Vendedor</label>
+                    <label class="radio"><input type="radio" name="coleccionista" id="perfilC" value="0"></input>Creador</label>
+                    <label class="radio"><input type="radio" name="coleccionista" id="perfil" value="1" ></input>Coleccionista</label>
+                    <div>
+                        <br>
+                    <input 
+                    type="text" 
+                    name="codigo" 
+                    placeholder="Codigo de invitación" 
+                    id="codigo" 
+                    style='display:none'
+                    class="<%= locals.errors && errors.codigo? 'invalido' : null %>"
+                    value="<%= locals.oldData ? oldData.codigo : null %>"
+                    >
+                <% if (locals.errors && errors.codigo) { %>
+                    <div class="texto-error">
+                       <%= errors.codigo.msg %>
+                    </div>
+                <% } %>
+                </div>
                 </div>
                 <button type="submit" class="boton-formulario">Editar</button>
                 <button type="reset" class="boton-formulario">Borrar</button>
 
             </form>
             <script src='/js/validacionesEditarRegistro.js'></script>
+
         </main>
         <!-- footer -->
         <%- include('../partials/footer') %>

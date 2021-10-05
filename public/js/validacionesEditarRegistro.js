@@ -3,7 +3,8 @@
 
 window.addEventListener("load", function(){
     let formulario = document.querySelector('.formulario');
-
+    let perfilC = document.querySelector('#perfilC');
+    let perfil = document.querySelector('#perfil');
 
     formulario.addEventListener("submit", function(e){
         let errores = [];
@@ -33,5 +34,13 @@ window.addEventListener("load", function(){
         
 
         }
+    })
+    perfilC.addEventListener("click", function(){
+        let codigo = document.querySelector('#codigo')
+        codigo.style.display='block'
+    })
+    perfil.addEventListener("click", function(){
+        let codigo = document.querySelector('#codigo')
+        codigo.style.display='none'
     })
 })
